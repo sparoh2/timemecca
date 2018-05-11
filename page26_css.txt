@@ -1,0 +1,30 @@
+﻿.topArea ul li {
+	display:inline-block;
+	width: 102px;
+	margin-top: 10px;
+}
+.topArea ul li img {
+	width:50%;
+}
+.topArea ul li p {
+	color:#fff;
+	padding:10px 0 0;
+	font-size: 12px;
+	font-family:'Noto Sans KR', sans-serif;
+	line-height: 15px;
+}
+.imgL ul li {
+	float:left;
+	width:33.33%;
+	border-left:1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+	box-sizing:border-box;
+	text-align:center;
+	min-height: 100px;
+	line-height:110px;
+	padding-bottom:2px;
+	background-color: #fff;
+}
+.imgL ul li img {
+	width: 100%;
+}
