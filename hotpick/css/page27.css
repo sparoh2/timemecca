@@ -23,7 +23,6 @@
     min-width:1100px;
     margin:0px auto;
     letter-spacing:-1px;
-    background:url('/design/kr2/pick_icon.jpg') no-repeat center 150px;
     padding-bottom:60px;
 }
 .pick_title > span { 
@@ -46,7 +45,7 @@
 .pick_title > h2::after {
     content:'';
     display:block;
-    background:url('../pick_title_leaf.jpg') no-repeat;
+    background:url('../img/pick_title_leaf.jpg') no-repeat;
     width:58px;
     height:20px;
     margin:20px auto;
