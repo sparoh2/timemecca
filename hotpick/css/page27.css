@@ -57,6 +57,32 @@
     margin-bottom:100px;
     overflow:hidden;
 }
+.main_hole.top::before {
+    content:'';
+    display:inline-block;
+    background:url('../img/pick_top_pattern.png') no-repeat;
+    width:88px;
+    height:20px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    margin:0px auto;
+    z-index:100;
+}
+.main_hole.bot::after {
+    content:'';
+    display:inline-block;
+    background:url('../img/pick_bot_pattern.png') no-repeat;
+    width:88px;
+    height:20px;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0px auto;
+    z-index:100;
+}
 .main_hole .hole_inner { 
     position:relative;
     width:100%;
@@ -75,7 +101,7 @@
 }
 .main_hole_text > span { 
     font-size:20px; 
-    font-family:'Noto Sans KR',,'Malgun Gothic',sans-serif;
+    font-family:'Noto Sans KR','Malgun Gothic',sans-serif;
 }
 .main_hole_text > h1 { 
     font-size:80px; 
@@ -83,7 +109,7 @@
 }
 .main_hole_text > p { 
     font-size:20px;
-    font-family:'Noto Sans KR',,'Malgun Gothic',sans-serif;
+    font-family:'Noto Sans KR','Malgun Gothic',sans-serif;
     font-weight:400;
     line-height:30px;
     letter-spacing:-1px;
