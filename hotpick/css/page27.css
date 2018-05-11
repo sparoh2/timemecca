@@ -75,7 +75,7 @@
 }
 .main_hole_text > span { 
     font-size:20px; 
-    font-family:nanumgothic;
+    font-family:'Noto Sans KR',,'Malgun Gothic',sans-serif;
 }
 .main_hole_text > h1 { 
     font-size:80px; 
@@ -83,7 +83,7 @@
 }
 .main_hole_text > p { 
     font-size:20px;
-    font-family:'Noto Sans KR', sans-serif;
+    font-family:'Noto Sans KR',,'Malgun Gothic',sans-serif;
     font-weight:400;
     line-height:30px;
     letter-spacing:-1px;
@@ -109,7 +109,7 @@
     line-height:50px;
     color:#fff;
     text-decoration:none;
-    font-family:'Noto Sans KR', sans-serif;
+    font-family:'Light';
     font-size:18px;
     font-weight:400;
     letter-spacing:-0.01em;
@@ -154,7 +154,7 @@
 .pick_contents p {
     font-size:14px;
     line-height:2;
-    font-family: 'Raleway','Noto Sans KR','Malgun Gothic', sans-serif;
+    font-family:'Raleway','Noto Sans KR',,'Malgun Gothic',sans-serif;
     text-align:justify;
     letter-spacing:-0.03em;
     padding:15px 0;
@@ -162,7 +162,7 @@
 }
 .pick_contents p strong {
     font-size:24px;
-    font-family:'Noto Sans KR', sans-serif;
+    font-family:'Light';
     font-weight:400;
     letter-spacing:-0.03em;
     display:block;
@@ -254,10 +254,9 @@
 }
 .pick_slider .pick_list li .pick_listCont dl dt { 
     font-size:25px;
-    font-family:'Noto Sans KR', sans-serif;
+    font-family:'Light';
     font-weight:400;
     margin-top:3px;
-    color:#313131;
 }
 .pick_slider .pick_list li .pick_listCont dl dd { 
     color:#848484;
