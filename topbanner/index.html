@@ -38,25 +38,23 @@
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript">
 		(function($) {
-			$(document).ready(function() {  
-				var bannerTop_hidden = false;
-				function bannerTop_show() {
-					if(bannerTop_hidden == false) {
-						$('.banner-top-wrap').slideUp(function() {
-							$('.banner-top-button').addClass('closed');						
-							bannerTop_hidden = true;
-						});
-					}
-					else {
-						$('.banner-top-wrap').slideDown(function() {
-							$('.banner-top-button').removeClass('closed');						
-							bannerTop_hidden = false;
-						});					
-					}
-					return false;
+			var bannerTop_hidden = false;
+			function bannerTop_show() {
+				if(bannerTop_hidden == false) {
+					$('.banner-top-wrap').slideUp(function() {
+						$('.banner-top-button').addClass('closed');						
+						bannerTop_hidden = true;
+					});
 				}
-				window.bannerTop_show = bannerTop_show;
-			});
+				else {
+					$('.banner-top-wrap').slideDown(function() {
+						$('.banner-top-button').removeClass('closed');						
+						bannerTop_hidden = false;
+					});					
+				}
+				return false;
+			}
+			window.bannerTop_show = bannerTop_show;
 		}(jQuery));
 	</script>	
 </body>
