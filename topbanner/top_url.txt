@@ -1,0 +1,11 @@
+<map name="map1">
+	<area shape="RECT" coords="368,1,736,79" href="/shop/shopbrand.html?xcode=027&type=Y&mcode=122&scode=004" title="알마니" />
+	<area shape="RECT" coords="738,2,1103,79" href="/shop/page.html?id=15" title="기획전" />
+	<area shape="RECT" coords="1104,1,1471,79" href="/shop/shopbrand.html?xcode=027&type=Y&mcode=120&scode=005" title="다니엘웰링턴" />
+</map>
+
+
+
+↑접기
+↓(얘는 뭐라고 해야하지 아직 못정했는데.. 정해서 바로 알려드릴게요!)
+     -> 배경색 #ff2525

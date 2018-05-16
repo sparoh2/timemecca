@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>타임메카</title>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<div class="banner-top-box">
+			<div class="banner-top-wrap" id="banner-top-wrap">
+				<div class="banner-top">
+					<img src="images/banner_top_180516.jpg" alt="타임메카 탑 배너" usemap="#image-map" />
+					<map name="image-map">
+					    <area shape="rect" href="/shop/shopbrand.html?xcode=027&amp;type=Y&amp;mcode=122&amp;scode=004" coords="1,0,364,79" alt="알마니" title="알마니" />
+					    <area shape="rect" href="/shop/page.html?id=15" coords="366,0,734,79" alt="5월엔 더 드림 기획전" title="5월엔 더 드림 기획전" />
+					    <area shape="rect" href="/shop/shopbrand.html?xcode=027&amp;type=Y&amp;mcode=120&amp;scode=005" coords="1098,78,736,0" alt="다니엘웰링턴" title="다니엘웰링턴" />
+					</map>
+				</div>
+			</div>
+			<div class="stateMenu">
+				<img src="images/main_00.jpg" />
+				<div class="banner-top-button" onclick="bannerTop_show()">
+					<span class="button-bg"></span>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<img src="images/main_01.jpg" />
+			<img src="images/main_02.jpg" />
+			<img src="images/main_03.jpg" />
+			<img src="images/main_04.jpg" />
+			<img src="images/main_05.jpg" />
+			<img src="images/main_06.jpg" />
+			<img src="images/main_07.jpg" />
+		</div>
+	</header>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		(function($) {
+			$(document).ready(function() {  
+				var bannerTop_hidden = false;
+				function bannerTop_show() {
+					if(bannerTop_hidden == false) {
+						$('.banner-top-wrap').slideUp(function() {
+							$('.banner-top-button').addClass('closed');						
+							bannerTop_hidden = true;
+						});
+					}
+					else {
+						$('.banner-top-wrap').slideDown(function() {
+							$('.banner-top-button').removeClass('closed');						
+							bannerTop_hidden = false;
+						});					
+					}
+					return false;
+				}
+				window.bannerTop_show = bannerTop_show;
+			});
+		}(jQuery));
+	</script>	
+</body>
+</html>

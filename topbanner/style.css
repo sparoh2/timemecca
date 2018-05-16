@@ -1,0 +1,76 @@
+/* reset */
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,h1,h2,h3,h4,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:'Open Sans','Noto Sans',AppleSDGothicNeo-Regular,'Malgun Gothic','Ã¯Â§ÂÃ«Â¬â€™Ã¯Â¿Â½ Ã¦â‚¬Â¨Ã¬Â¢Å Ã«Âµâ€œ','Ã¯Â¿Â½Ã«â€”Â­Ã¯Â¿Â½',dotum,sans-serif;color:#fff}
+a {color:#fff;text-decoration:none}
+a:active, a:hover {text-decoration:underline;color:#00a8ff}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+
+.stateMenu {
+	width:1100px;
+	height:35px;
+	margin:0px auto;
+	position:relative;
+}
+.banner-top-box {
+	position:relative;
+}
+.banner-top-wrap { 
+	background-color:#e93b3a;
+	width:100%;
+	height:80px;
+}
+.banner-top { 
+	width:1100px;
+	margin:0px auto;
+	text-align:center;
+	position:relative;
+}
+.banner-top-button {
+	position:absolute;
+	bottom:5px;
+	width:75px;
+	height:30px;
+	text-align:center;
+	right:-80px;
+	z-index:1000;
+	line-height:28px;
+	color:#fff;
+	font-family:'Noto Sans KR','Malgun Gothic','Dotum','Apple SD Gothic Neo', sans-serif;
+	font-size:14px;
+	font-weight:600;
+	letter-spacing:-0.03em;
+	background:#ff2524;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	cursor:pointer;
+}
+.banner-top-button .button-bg {
+	display:inline-block;
+	width:13px;
+	height:8px;
+	position:relative;
+	background:url('images/btn_up.png') no-repeat;
+	top:-2px;
+	padding-right:5px;
+}
+.banner-top-button::after {
+	content:'접기';
+}
+.banner-top-button.closed::after {
+	content:'열기';
+}
+.banner-top-button.closed .button-bg {
+	background:url('images/btn_down.png') no-repeat;
+}
+.main {
+	border-top:1px solid #e5e4e4;
+}

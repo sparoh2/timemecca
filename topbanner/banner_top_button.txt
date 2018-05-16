@@ -1,0 +1,35 @@
+﻿			var banner_top_show = false;
+        	$('.banner-top-button').click(function(e) {	
+        		if(banner_top_show == false) {
+	        		e.preventDefault();
+		        	$('.banner-top-wrap').slideUp();
+		        	var button_text = $(this).find('.button-text').text();
+		        	$(this).find('.button-text').text(button_text.replace('접기','열기'));
+		        	$(this).find('.button-bg').addClass('closed');
+		        	banner_top_show = true;
+		        }
+		        else {
+	        		e.preventDefault();
+		        	$('.banner-top-wrap').slideDown();
+		        	var button_text = $(this).find('.button-text').text();
+		        	$(this).find('.button-text').text(button_text.replace('열기','접기'));
+		        	$(this).find('.button-bg').removeClass('closed');
+		        	banner_top_show = false;		        	
+		        }
+		        return false;
+	        });
+
+
+
+
+
+
+		(function($) {
+			$('.banner-top-button').click(function() {
+			    $('.banner-top-wrap').slideToggle();
+			   	var $banner_button = $(this);
+			    setTimeout(function() {
+				    $banner_button.toggleClass("closed");
+				}, 300);
+			});
+		})(jQuery);
