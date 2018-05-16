@@ -60,7 +60,6 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	position:relative;
 	background:url('images/btn_up.png') no-repeat;
 	top:-2px;
-	padding-right:5px;
 }
 .banner-top-button::after {
 	content:'접기';
