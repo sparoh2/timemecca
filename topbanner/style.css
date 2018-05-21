@@ -74,3 +74,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .main {
 	border-top:1px solid #e5e4e4;
 }
+.close-banner-top {
+	position:absolute;
+	top:60px;
+	right:-50px;
+}
