@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header>
-		<div class="banner-top-box">
+		<div class="banner-top-box" id="banner-top-box">
 			<div class="banner-top-wrap" id="banner-top-wrap">
 				<div class="banner-top">
 					<img src="images/banner_top_180516.jpg" alt="타임메카 탑 배너" usemap="#image-map" />
@@ -20,10 +20,10 @@
 					<script language="Javascript">
 					cookiedata = document.cookie;    
 					if ( cookiedata.indexOf("maindiv=done") < 0 ) {      
-						document.all['banner-top-wrap'].style.display = "block";
+						document.all['banner-top-box'].style.display = "block";
 					} 
 					else {
-						document.all['banner-top-wrap'].style.display = "none"; 
+						document.all['banner-top-box'].style.display = "none"; 
 					}
 					</script>
 				</div>
@@ -51,7 +51,7 @@
 				}
 				function closeWin() { 
 					setCookie( "maindiv", "done" , 1 ); 
-					$('#banner-top-wrap').slideUp();
+					$('#banner-top-box').slideUp();
 				}
 
 				window.setCookie = setCookie;

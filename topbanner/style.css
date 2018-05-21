@@ -26,7 +26,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .banner-top-wrap { 
 	background-color:#e93b3a;
 	width:100%;
-	height:105px;
+	height:80px;
 }
 .banner-top { 
 	width:1100px;
@@ -76,6 +76,6 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 }
 .close-banner-top {
 	position:absolute;
-	top:60px;
-	right:-50px;
+	top:55px;
+	right:-80px;
 }
