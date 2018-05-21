@@ -41,15 +41,22 @@
 	</header>
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script>
-	function setCookie( name, value, expiredays ) { 
-		var todayDate = new Date(); 
-		todayDate.setDate( todayDate.getDate() + expiredays ); 
-		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
-	}
-	function closeWin() { 
-		setCookie( "maindiv", "done" , 1 ); 
-		$('#banner-top-wrap').slideUp();
-	}
+        window.jQuery1_12_4 = jQuery.noConflict(true);
+        (function($) {
+            var jQuery = $;		
+				function setCookie( name, value, expiredays ) { 
+					var todayDate = new Date(); 
+					todayDate.setDate( todayDate.getDate() + expiredays ); 
+					document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+				}
+				function closeWin() { 
+					setCookie( "maindiv", "done" , 1 ); 
+					$('#banner-top-wrap').slideUp();
+				}
+
+				window.setCookie = setCookie;
+				window.closeWin = closeWin;
+        }(jQuery1_12_4));				
 	</script>
 </body>
 </html>
