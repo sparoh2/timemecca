@@ -72,6 +72,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 	background:url('images/btn_down.png') no-repeat;
 }
 .main {
+	width:100%;
+	overflow:hidden;
 	border-top:1px solid #e5e4e4;
 }
 .close-banner-top {
