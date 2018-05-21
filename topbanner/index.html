@@ -4,11 +4,13 @@
 	<meta charset="UTF-8">
 	<title>타임메카</title>
 	<link href="style.css" rel="stylesheet" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
 </head>
 <body>
 	<header>
 		<div class="banner-top-box">
-			<div class="banner-top-wrap" id="banner-top-wrap">
+			<div class="banner-top-wrap" id="divpop">
 				<div class="banner-top">
 					<img src="images/banner_top_180516.jpg" alt="타임메카 탑 배너" usemap="#image-map" />
 					<map name="image-map">
@@ -16,11 +18,24 @@
 					    <area shape="rect" href="http://www.timemecca.co.kr/shop/page.html?id=15" coords="366,0,734,79" alt="5월엔 더 드림 기획전" title="5월엔 더 드림 기획전" />
 					    <area shape="rect" href="http://www.timemecca.co.kr/shop/shopbrand.html?xcode=027&type=Y&mcode=120&scode=005" coords="1098,78,736,0" alt="다니엘웰링턴" title="다니엘웰링턴" />
 					</map>
+					<form name="notice_form" class="bt">
+						<input type="checkbox" name="chkbox" value="checkbox">오늘 이 창을 열지 않음
+						<a href="javascript:closeWin();"><b>[닫기]</b></a>
+					</form>
+					<script language="Javascript">
+					cookiedata = document.cookie;    
+					if ( cookiedata.indexOf("maindiv=done") < 0 ) {      
+						document.all['divpop'].style.display = "block";
+					} 
+					else {
+						document.all['divpop'].style.display = "none"; 
+					}
+					</script>
 				</div>
 			</div>
 			<div class="stateMenu">
 				<img src="images/main_00.jpg" />
-				<div class="banner-top-button" onclick="bannerTop_show()">
+				<div class="banner-top-button" id="banner-top-button" onclick="closeWin();">
 					<span class="button-bg"></span>
 				</div>
 			</div>
@@ -35,27 +50,18 @@
 			<img src="images/main_07.jpg" />
 		</div>
 	</header>
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript">
-		(function($) {
-			var bannerTop_hidden = false;
-			function bannerTop_show() {
-				if(bannerTop_hidden == false) {
-					$('.banner-top-wrap').slideUp(function() {
-						$('.banner-top-button').addClass('closed');						
-						bannerTop_hidden = true;
-					});
-				}
-				else {
-					$('.banner-top-wrap').slideDown(function() {
-						$('.banner-top-button').removeClass('closed');						
-						bannerTop_hidden = false;
-					});					
-				}
-				return false;
-			}
-			window.bannerTop_show = bannerTop_show;
-		}(jQuery));
-	</script>	
+	<script>
+	function setCookie( name, value, expiredays ) { 
+		var todayDate = new Date(); 
+		todayDate.setDate( todayDate.getDate() + expiredays ); 
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+	}
+	function closeWin() { 
+		if ( document.notice_form.chkbox.checked ){ 
+			setCookie( "maindiv", "done" , 1 ); 
+		} 
+		document.all['divpop'].style.display = "none";
+	}
+	</script>
 </body>
 </html>
