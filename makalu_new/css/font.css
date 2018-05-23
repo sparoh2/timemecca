@@ -1,9 +1,7 @@
-@charset "utf-8";
-
 @font-face {
 	font-family: 'Book';
-	src: url('http://sineorb27.cafe24.com/web/makalu/fonts/futurastd-book.eot');
-	src: local('â˜º'), url('http://sineorb27.cafe24.com/web/makalu/fonts/futurastd-book.woff') format('woff'), url('http://sineorb27.cafe24.com/web/makalu/fonts/futurastd-book.ttf') format('truetype'), url('/web/makalu/fonts/futurastd-book.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	font-weight: 200;
+	src: local('Book');
+	src: url('font/futurastd-book.eot');
+	src: url('font/futurastd-book.eot?#iefix') format('embedded-opentype'), url('font/futurastd-book.woff') format('woff'), url('font/futurastd-book.ttf') format('truetype');
 }
