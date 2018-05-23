@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/test_style.css" rel="stylesheet" />
+	<link href="css/font.css" rel="stylesheet" />
+</head>
+<body>
+<div class="wrapper">
+	<!-- Header -->
+	<header>
+		<h1><a href="#"><img src="img/makalu_logo.png" alt="마칼루" title="마칼루" /></a></h1>
+		<nav>
+			<div class="menu-cont">
+				<a href="#" class="main-menu" onmouseover="navSubmenu();">STORE</a>
+				<ul class="sub-menu">
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Simply Dummy</a></li>
+					<li><a href="#">Printing</a></li>
+					<li><a href="#">Typesetting</a></li>
+					<li><a href="#">Standard</a></li>
+				</ul>
+			</div>
+			<div class="menu-cont">
+				<a href="#" class="main-menu" onmouseover="navSubmenu();">COMMUNITY</a>
+				<ul class="sub-menu">
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Simply Dummy</a></li>
+					<li><a href="#">Printing</a></li>
+					<li><a href="#">Typesetting</a></li>
+					<li><a href="#">Standard</a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul class="service-menu">
+			<li><a href="#" class="member">회원</a></li>
+			<li><a href="#" class="search">검색</a></li>
+			<li><a href="#" class="cart">장바구니</a></li>
+			<li><a href="#" class="today">오늘 본 상품</a></li>
+			<li><a href="#" class="community">커뮤니티</a></li>
+		</ul>
+	</header>
+	<!-- Header -->
+	<!-- Container -->
+	<div class="main-container">
+		<div class="visual-text-left">
+			<h3>SPIN YOUR LIFE</h3>
+			<strong>SPIN YOUR</strong>
+		</div>
+		<ul class="visual-cont">
+			<li class="wc1">
+				<div class="visual-image">
+					<img src="img/main_wc_1.png" alt="Visual 1" />
+				</div>
+			</li>
+			<li class="wc2">
+				<div class="visual-image">
+					<img src="img/main_wc_2.png" alt="Visual 2" />
+				</div>
+			</li>
+			<li class="wc3">
+				<div class="visual-image">
+					<img src="img/main_wc_3.png" alt="Visual 3" />
+				</div>
+			</li>
+			<li class="wc4">
+				<div class="visual-image">
+					<img src="img/main_wc_4.png" alt="Visual 4" />
+				</div>
+			</li>
+			<li class="wc5">
+				<div class="visual-image">
+					<img src="img/main_wc_5.png" alt="Visual 5" />
+				</div>
+			</li>									
+		</ul>
+		<ul class="visual-text-right">
+			<li class="wc1">
+				<a href="#" data-child="wc1" class="active">UNIQUE</a>
+			</li>
+			<li class="wc2">
+				<a href="#" data-child="wc2">YOUTH</a>
+			</li>
+			<li class="wc3">
+				<a href="#" data-child="wc3">COLORFUL</a>
+			</li>
+			<li class="wc4">
+				<a href="#" data-child="wc4">POWERFUL</a>
+			</li>
+			<li class="wc5">
+				<a href="#" data-child="wc5">SIMPLE</a>
+			</li>			
+		</ul>
+	</div>
+	<!-- Container -->	
+	<!-- Footer -->
+	<footer>
+		<ul class="footer-list">
+	        <li><a href="#">회사소개</a></li>
+	        <li><a href="#">이용약관</a></li>
+	        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+	        <li>법인명 : (주)트랜드메카</li>
+	        <li>대표자 : 서대규 </li>
+	        <li>통신판매업 신고 : 2016-서울강남02846호</li>
+	        <li>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</li>
+	        <li>사업자 등록번호 안내 : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></li>
+	        <li>© 2018 TRENDMECCA</li>
+	    </ul>
+	</footer>
+	<!-- Footer -->
+	<!-- Script -->
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+        window.jQuery1_12_4 = jQuery.noConflict(true);
+        (function($) {
+            var jQuery = $;
+            function navSubmenu() {
+                var nav_1stMenu = $('.menu-cont');
+
+                nav_1stMenu.on('mouseover focusin', function() {
+                    $(this).addClass('active');
+                }).on('mouseout focusout', function() {
+                    $(this).removeClass('active');			
+                });
+            }            
+           window.navSubmenu = navSubmenu;
+        }(jQuery1_12_4));		
+	</script>
+	<script>
+        (function($) {
+            var jQuery = $;
+            $('.visual-text-right li a').on('mouseover focusin', function() {
+            	if ( !$(this).hasClass('active') ) {
+		            $('.visual-text-right li a').removeClass('active');
+	            	$(this).addClass('active');
+	            	var nav = $(this).data('child');
+	            	$('.visual-cont li').fadeOut();            	
+	            	$('.visual-cont li.' + nav).fadeIn();
+            	}
+            })
+        }(jQuery1_12_4));				
+	</script>
+	<!-- Script -->			
+</div>
+</body>
+</html>
