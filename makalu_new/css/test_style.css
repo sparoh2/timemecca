@@ -107,6 +107,11 @@ header .service-menu li a.community {
 	color:#fff;
 	z-index:1400;
 	text-align:center;
+    animation:mtxt 1s;
+}
+@keyframes mtxt {
+    0% {transform:translateY(100px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
 }
 .visual-text-left h3 {
 	font-size: 2.5vw;
@@ -123,13 +128,14 @@ header .service-menu li a.community {
     font-family: 'Book',sans-serif;
 }
 .visual-text-right {
-position: absolute;
+	position: absolute;
     top: 33%;
     right: 9%;
     color: #fff;
     z-index: 1400;
     text-align: center;
     font-family: 'Book',sans-serif;
+	animation:mtxt 1s;
 }
 .visual-text-right li a {
     display: block;
@@ -179,6 +185,7 @@ position: absolute;
 }
 .visual-cont li .visual-image {
 	margin-top:13%;
+	animation:mtxt 1s;
 }
 .visual-cont li .visual-image img {
 	width:22%;
