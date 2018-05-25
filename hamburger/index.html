@@ -12,7 +12,7 @@
 		<aside id="gnb-sideLeft">
 			<div class="gnbWrap">
 				<div class="gnb-innerWrap"><a href="#" class="ham">좌측 햄버거메뉴</a></div>
-				<div class="gnb-submenu">서브메뉴</div>
+				<div class="gnb-submenu"><a href="#" class="sub-close">서브메뉴</a></div>
 			</div>
 		</aside>
 		<div id="container">
@@ -143,6 +143,7 @@
 	        		$(this).removeClass('ani');
 	        		gnb_sideLeft = false;        			
         		}
+        		return false;
         	});
         	$('#blocked').click(function() {
         		$('html').removeClass('gnb-sideLeft');
@@ -150,6 +151,9 @@
         	});
         	$('.ham').click(function() {
         		$('.gnb-submenu').addClass('open');
+        	});
+        	$('.sub-close').click(function() {
+        		$('.gnb-submenu').removeClass('open');        		
         	});
         });
 	</script>
