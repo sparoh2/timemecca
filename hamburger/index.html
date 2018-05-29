@@ -6,13 +6,88 @@
 	<title>타임메카 모바일 - Hamburger Menu</title>
 	<link href="css/reset.css" rel="stylesheet" />
 	<link href="css/header.1.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
 </head>
 <body>
 	<div id="wrap">
 		<aside id="gnb-sideLeft">
 			<div class="gnbWrap">
-				<div class="gnb-innerWrap"><a href="#" class="ham">좌측 햄버거메뉴</a></div>
-				<div class="gnb-submenu"><a href="#" class="sub-close">서브메뉴</a></div>
+				<div class="gnb-innerWrap">
+					<div class="login-area">
+						<a href="#" class="login">로그인</a>
+						<strong>타임메카에 오신 것을 환영합니다 :)</strong>
+						<a href="#" class="aside-close">닫기</a>
+					</div>
+					<div class="mypage-area">
+						<ul class="mypage-list">
+							<li><a href="#" class="button-bg mypage1">마이페이지</a></li>
+							<li><a href="#" class="button-bg mypage2">최근 본 상품</a></li>
+							<li><a href="#" class="button-bg mypage3">장바구니</a></li>
+							<li><a href="#" class="button-bg mypage4">주문조회</a></li>
+						</ul>
+					</div>
+					<div class="category-area">
+						<h2>카테고리 & 브랜드</h2>
+						<a href="#" class="aside-brands button-bg">전체 브랜드 검색</a>
+						<ul class="aside-category">
+							<li><a href="#">시계</a>	</li>
+							<li><a href="#">악세사리</a>	</li>
+							<li><a href="#">패션굿즈</a>	</li>
+							<li><a href="#">코스메틱</a>	</li>
+							<li><a href="#">프리미엄관</a></li>
+							<li><a href="#">디자이너관</a></li>
+							<li><a href="#">이벤트존</a></li>
+						</ul>
+					</div>
+					<div class="planning-area">
+						<ul class="plan-list">
+							<li><a href="#"><img src="img/plan_01_20180518.jpg" alt="타임메카 얼마줬스 기획전" /></a></li>
+							<li><a href="#"><img src="img/plan_02_20180528.jpg" alt="타임메카 할인조아3080 기획전" /></a></li>
+						</ul>
+					</div>
+					<div class="cs-area">
+						<ul class="cs-list">
+							<li><a href="#">고객만족센터</a></li>
+							<li><a href="#">메카소개</a></li>
+							<li><a href="#">정품인증</a></li>
+							<li><a href="#">수상내역</a></li>
+						</ul>
+					</div>
+					<div class="app-area">
+						<div class="app-timemecca">
+							<img src="img/timemecca_icon.jpg" alt="타임메카 앱 아이콘" />
+						</div>
+						<div class="app-info">
+							<h4>타임메카 모바일 앱</h4>
+							<strong>앱으로 구매하고 추가 혜택 받기</strong>
+							<ul class="app-list">
+								<li><a href="#">Google Play</a></li>
+								<li><a href="#">App Store</a></li>
+							</ul>
+						</div>1
+					</div>
+				</div>
+				<div class="gnb-submenu">
+					<div class="gnb-subwrap">
+						<h3>시계</h3>
+						<ul class="sub-2depth">
+							<li>
+								<a href="#">남성시계 모음전</a>
+								<span class="view-goods"><a href="#">상품보기</a></span>
+								<ul class="sub-3depth">
+									<li>
+										<a href="#">남성 가격대 모음</a>
+										<span class="view-goods"><a href="#">상품보기</a></span>										
+									</li>
+									<li>
+										<a href="#">남성 소재별 모음</a>
+										<span class="view-goods"><a href="#">상품보기</a></span>										
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</aside>
 		<div id="container">
@@ -124,7 +199,7 @@
 			<div id="contents">
 				<img src="img/timemecca_body.jpg" alt="Timemecca" width="100%" />
 			</div>
-			<a href="#none" id="blocked"></a>
+			<a href="#none" id="blocked" class="aside-close"></a>
 		</div>
 	</div>
 </body>
@@ -133,27 +208,18 @@
         $(function() {
         	var gnb_sideLeft = false;
         	$('.ani-menuBtn').click(function() {
-        		if(gnb_sideLeft == false) {
-	        		$('html').addClass('gnb-sideLeft');
-	        		$(this).addClass('ani');
-	        		gnb_sideLeft = true;
-        		}
-        		else {
-	        		$('html').removeClass('gnb-sideLeft');
-	        		$(this).removeClass('ani');
-	        		gnb_sideLeft = false;        			
-        		}
-        		return false;
+	        	$('html').addClass('gnb-sideLeft').addClass('no-scroll');
+	        	$('body').addClass('no-scroll');
+	        	$('#gnb-sideLeft').css({'display':'block'});
+	        	gnb_sideLeft = true;
         	});
-        	$('#blocked').click(function() {
-        		$('html').removeClass('gnb-sideLeft');
-        		$('.ani-menuBtn').removeClass('ani');        		
-        	});
-        	$('.ham').click(function() {
-        		$('.gnb-submenu').addClass('open');
-        	});
-        	$('.sub-close').click(function() {
-        		$('.gnb-submenu').removeClass('open');        		
+        	$('.aside-close').click(function() {
+        		$('html').removeClass('gnb-sideLeft').removeClass('no-scroll');
+	        	$('body').removeClass('no-scroll');
+        		setTimeout(function() {
+		        	$('#gnb-sideLeft').css({'display':'none'});
+	        		gnb_sideLeft = false;
+	        	}, 500);
         	});
         });
 	</script>
