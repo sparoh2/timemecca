@@ -1791,10 +1791,10 @@ html.gnb-sideLeft #gnb-sideLeft {
 }
 html.gnb-sideLeft #container {
   transform: translate(380px,0);
-  -webkit-transform: translate(380px,0);
-  -moz-transform: translate(380px,0);
-  -ms-transform: translate(380px,0);
-  -o-transform: translate(380px,0);
+  -webkit-transform: translate(89%,0);
+  -moz-transform: translate(89%,0);
+  -ms-transform: translate(89%,0);
+  -o-transform: translate(89%,0);
 }
 #blocked {
     z-index: 500;
@@ -1820,22 +1820,22 @@ html.gnb-sideLeft #blocked {
     visibility: visible; 
 }
 .gnb-innerWrap {
-  width:100%;
-  min-width:380px;
+  width:90%;
   overflow:hidden;
+  position:relative;
 }
 .gnbWrap {
   position:relative;
-  width:380px;
-  background: #fff;  
+  width: 100%;
+  background: #fff;
   z-index:3000;
 }
-.gnbWrap::after {
+.gnb-innerWrap::after {
     content:'';
     overflow:hidden;
     position:absolute;
     top:0;
-    right:0px;
+    right:0;
     bottom:0;
     z-index:2100;
     width:7px;
