@@ -1835,7 +1835,7 @@ html.gnb-sideLeft #blocked {
     overflow:hidden;
     position:absolute;
     top:0;
-    right:0;
+    right:-2px;
     bottom:0;
     z-index:2100;
     width:7px;
@@ -2066,3 +2066,7 @@ html.gnb-sideLeft #blocked {
 .gnb-innerWrap .planning-area .plan-list li a {
     display:block;
 }
+.gnb-innerWrap .planning-area .plan-list li a img {
+    width:100%;
+}
+
