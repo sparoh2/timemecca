@@ -1822,7 +1822,6 @@ html.gnb-sideLeft #blocked {
 .gnb-innerWrap {
   width:100%;
   min-width:380px;
-  height:737px;
   overflow:hidden;
 }
 .gnbWrap {
@@ -1922,6 +1921,9 @@ html.gnb-sideLeft #blocked {
     width:100%;
     height:100%;
     font-family:'Nanum Gothic',sans-serif;
+    font-size:13px;
+    color:#282828;
+    letter-spacing:-0.03em;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a::before {
     content:'';
@@ -1944,19 +1946,51 @@ html.gnb-sideLeft #blocked {
     background-position:-102px -100px;
 }
 .gnb-innerWrap .category-area {
-    margin:10px 0 20px;
+    margin:10px 0 10px;
     background:#fff;
     border-bottom:1px solid #e4e4e4;
 }
-.gnb-innerWrap .category-area h2 {
+.gnb-innerWrap h2.category-title {
     color:#2e3138;
     font-family:'Nanum Gothic',sans-serif;
     font-size:15px;
     font-weight:700;
     letter-spacing:-0.03em;
     line-height:18px;
-    padding:10px 0 10px 15px;
+    padding:10px 0 10px 18px;
     border-bottom:1px solid #e4e4e4;
+    position:relative;
+}
+.gnb-innerWrap h2.category-title .view-more {
+    position:absolute;
+    right:20px;
+}
+.gnb-innerWrap h2.category-title .view-more a {
+    display:block;
+    color:#868585;
+    font-size:13px;
+    font-weight:200;
+    padding-right:16px;
+    position:relative;
+}
+.gnb-innerWrap h2.category-title .view-more a::after {
+    content:'';
+    display:block;
+    width:10px;
+    height:15px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    background:url('../img/icon_sprite.png') no-repeat;
+    background-position:-158px -44px;    
+}
+.gnb-innerWrap h2.category-title .view-more {
+    position:absolute;
+    right:20px;
+}
+.gnb-innerWrap h2.category-title .view-more a {
+    display:block;
+
 }
 .gnb-innerWrap .category-area .aside-brands {
     background:#ff0000;
@@ -2013,6 +2047,22 @@ html.gnb-sideLeft #blocked {
     width:15px;
     height:20px;
     position:absolute;
-    right:8px;
+    right:7px;
     top:8px;
+}
+.gnb-innerWrap .planning-area {
+    background:#fff;
+}
+.gnb-innerWrap .planning-area .plan-list {
+    padding:15px 10px;
+    border-bottom:1px solid #e4e4e4;
+}
+.gnb-innerWrap .planning-area .plan-list li {
+    margin-bottom:10px;
+}
+.gnb-innerWrap .planning-area .plan-list li:last-child {
+    margin-bottom:0px;
+}
+.gnb-innerWrap .planning-area .plan-list li a {
+    display:block;
 }
