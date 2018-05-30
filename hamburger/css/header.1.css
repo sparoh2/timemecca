@@ -1835,7 +1835,7 @@ html.gnb-sideLeft #blocked {
     overflow:hidden;
     position:absolute;
     top:0;
-    right:-2px;
+    right: -3px;
     bottom:0;
     z-index:2100;
     width:7px;
@@ -1887,7 +1887,7 @@ html.gnb-sideLeft #blocked {
 }
 .gnb-innerWrap .login-area strong {
     flex-grow: 4;
-    margin-left: 12px;
+    margin-left: 8px;
     font-size: 13px;
     font-weight: 400;
     line-height: 14px;
