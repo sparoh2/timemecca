@@ -68,12 +68,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="gnb-submenu" style="display:none;">
+				<div class="gnb-submenu">
 					<div class="gnb-subwrap">
 						<h3>시계</h3>
 						<ul class="sub-2depth">
 							<li>
-								<a href="#">남성시계 모음전</a>
+								<a href="#" class="sub-close">남성시계 모음전</a>
 								<span class="view-goods"><a href="#">상품보기</a></span>
 								<ul class="sub-3depth">
 									<li>
@@ -221,6 +221,12 @@
 		        	$('#gnb-sideLeft').css({'display':'none'});
 	        		gnb_sideLeft = false;
 	        	}, 500);
+        	});
+        	$('.aside-brands').click(function() {
+        		$('.gnb-submenu').addClass('open');
+        	});
+        	$('.sub-close').click(function() {
+        		$('.gnb-submenu').removeClass('open');
         	});
         });
 	</script>

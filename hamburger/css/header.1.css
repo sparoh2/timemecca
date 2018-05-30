@@ -1843,18 +1843,29 @@ html.gnb-sideLeft #blocked {
     background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0.6)));
     background-image:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.6));
 }
+.gnb-submenu {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;  
+}
+.gnb-submenu.open {
+    z-index:1001;
+}
 .gnb-subwrap {
   width:100%;
   background:#ccc;
-  height:737px;
-  transform: translateX(563px) translateY(0px);  
+  height:100%;
+  transform: translateX(563px) translateY(0px);
   transition: transform 0.4s ease 0.0s;
   -webkit-transition: -webkit-transform 0.4s ease 0.0s;
   -moz-transition: -moz-transform 0.4s ease 0.0s;
   -ms-transition: -ms-transform 0.4s ease 0.0s;
   -o-transition: -o-transform 0.4s ease 0.0s;
 }
-.gnb-submenu.open {
+.gnb-submenu.open .gnb-subwrap {
   transform: translateX(0px) translateY(0px);    
 }
 .gnb-innerWrap {
