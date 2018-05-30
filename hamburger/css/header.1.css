@@ -1871,28 +1871,29 @@ html.gnb-sideLeft #blocked {
     font-family:'NanumGothic';
 }
 .gnb-innerWrap .login-area .login {
-    flex-grow:1;
-    background:#ff2523;
-    border-radius:25px;
-    width:60px;
-    height:35px;
-    line-height:35px;
-    letter-spacing:-0.1em;
-    font-size:16px;
-    font-family:'Nanum Gothic', sans-serif;
-    font-weight:600;
-    color:#fff;
-    display:block;
-    text-align:center;
+    flex-grow: 1;
+    background: #ff2523;
+    border-radius: 25px;
+    width: 58px;
+    height: 32px;
+    line-height: 31px;
+    letter-spacing: -0.03em;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    text-align: center;
 }
 .gnb-innerWrap .login-area strong {
-    flex-grow:4;
-    margin-left:12px;
-    font-size:12px;
-    font-weight:600;
-    font-family:'Nanum Gothic', sans-serif;
-    letter-spacing:-0.05em;
-    color:#444444;
+    flex-grow: 4;
+    margin-left: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: -0.03em;
+    color: #444444;
 }
 .gnb-innerWrap .login-area .aside-close {
     flex-grow:1;
@@ -1917,7 +1918,7 @@ html.gnb-sideLeft #blocked {
     justify-content:center;
     align-items:center;    
     text-align:center;
-    padding:10px 0;
+    padding:12px 0;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a {
     display:block;
@@ -1931,25 +1932,25 @@ html.gnb-sideLeft #blocked {
 .gnb-innerWrap .mypage-area .mypage-list li a::before {
     content:'';
     display:block;
-    width:35px;
-    height:30px;
-    margin:3px auto 3px;
+    width:27px;
+    height:22px;
+    margin:5px auto 4px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage1::before {
     background:url(../img/icon_mypage1.png) no-repeat;    
-    background-size:35px 30px;
+    background-size:27px 22px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage2::before {
     background:url(../img/icon_mypage2.png) no-repeat;    
-    background-size:35px 30px;
+    background-size:27px 22px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage3::before {
     background:url(../img/icon_mypage3.png) no-repeat;    
-    background-size:35px 30px;
+    background-size:27px 22px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage4::before {
     background:url(../img/icon_mypage4.png) no-repeat;    
-    background-size:35px 30px;
+    background-size:27px 22px;
 }
 .gnb-innerWrap .category-area {
     margin:10px 0 10px;
@@ -1988,7 +1989,8 @@ html.gnb-sideLeft #blocked {
     top:0px;
     right:0px;
     background:url('../img/icon_sprite.png') no-repeat;
-    background-position:-158px -44px;    
+    background-position: -105px -26px;
+    background-size:113px 144px;
 }
 .gnb-innerWrap h2.category-title .view-more {
     position:absolute;
@@ -2017,7 +2019,8 @@ html.gnb-sideLeft #blocked {
     content:'';
     display:block;
     background:url('../img/icon_sprite.png') no-repeat;
-    background-position:-126px -42px;
+    background-position: -78px -25px;
+    background-size:113px 144px;
     width:15px;
     height:20px;
     position:absolute;
@@ -2049,7 +2052,8 @@ html.gnb-sideLeft #blocked {
     content:'';
     display:block;
     background:url('../img/icon_sprite.png') no-repeat;
-    background-position:-113px -42px;
+    background-position: -69px -25px;
+    background-size:113px 144px;
     width:15px;
     height:20px;
     position:absolute;
