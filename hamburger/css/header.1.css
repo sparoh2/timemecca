@@ -1934,19 +1934,22 @@ html.gnb-sideLeft #blocked {
     width:35px;
     height:30px;
     margin:3px auto 3px;
-    background:url(../img/icon_sprite.png) no-repeat;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage1::before {
-    background-position:0px -100px;
+    background:url(../img/icon_mypage1.png) no-repeat;    
+    background-size:35px 30px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage2::before {
-    background-position:-32px -100px;
+    background:url(../img/icon_mypage2.png) no-repeat;    
+    background-size:35px 30px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage3::before {
-    background-position:-69px -100px;
+    background:url(../img/icon_mypage3.png) no-repeat;    
+    background-size:35px 30px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage4::before {
-    background-position:-102px -100px;
+    background:url(../img/icon_mypage4.png) no-repeat;    
+    background-size:35px 30px;
 }
 .gnb-innerWrap .category-area {
     margin:10px 0 10px;
