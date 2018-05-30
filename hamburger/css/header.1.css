@@ -1896,13 +1896,14 @@ html.gnb-sideLeft #blocked {
     color: #444444;
 }
 .gnb-innerWrap .login-area .aside-close {
-    flex-grow:1;
+    flex-grow: 1;
     text-indent:-1000em;
     display:block;
     width:20px;
     height:26px;
     background:url(../img/icon_sprite.png) no-repeat;
-    background-position:-114px -5px;
+    background-position: -83px -2px;
+    background-size:133px 164px;
 }
 .gnb-innerWrap .mypage-area {
     background:#fff;
