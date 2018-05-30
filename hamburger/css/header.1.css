@@ -2166,16 +2166,6 @@ html.gnb-sideLeft #blocked {
     position:relative;
     margin-left:0px;
 }
-.gnb-innerWrap .app-info .app-list li:first-child::after {
-    content:'';
-    display:block;
-    position:absolute;
-    right:-5px;
-    top:2px;
-    width:1px;
-    height:16px;
-    background:#dbdbdb;
-}
 .gnb-innerWrap .app-info .app-list li:last-child {
     position:relative;
     margin-right:0px;
@@ -2200,6 +2190,17 @@ html.gnb-sideLeft #blocked {
     position:absolute;
     left:0px;
     top:0px;
+}
+.gnb-innerWrap .app-info .app-list li.app-android a::after {
+    content:'';
+    display:block;
+    float:right;
+    width:1px;
+    height:16px;
+    background:#dbdbdb;
+    position:relative;
+    top:2px;
+    left:5px;
 }
 .gnb-innerWrap .app-info .app-list li.app-ios a::before {
     content:'';
