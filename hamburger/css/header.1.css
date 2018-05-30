@@ -2133,6 +2133,7 @@ html.gnb-sideLeft #blocked {
 }
 .gnb-innerWrap .app-timemecca {
     flex-grow:1;
+    margin-right:10px;
 }
 .gnb-innerWrap .app-info {
     flex-grow:5;
