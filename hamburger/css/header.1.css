@@ -1988,7 +1988,7 @@ html.gnb-sideLeft #blocked {
 }
 .gnb-innerWrap h2.category-title .view-more {
     position:absolute;
-    right:20px;
+    right:15px;
 }
 .gnb-innerWrap h2.category-title .view-more a {
     display:block;
