@@ -1878,8 +1878,9 @@ html.gnb-sideLeft #blocked {
     height:35px;
     line-height:35px;
     letter-spacing:-0.1em;
-    font-size:14px;
-    font-family:'NanumGothic', sans-serif;
+    font-size:16px;
+    font-family:'Nanum Gothic', sans-serif;
+    font-weight:600;
     color:#fff;
     display:block;
     text-align:center;
@@ -1889,7 +1890,7 @@ html.gnb-sideLeft #blocked {
     margin-left:12px;
     font-size:12px;
     font-weight:600;
-    font-family:'NanumGothic', sans-serif;
+    font-family:'Nanum Gothic', sans-serif;
     letter-spacing:-0.05em;
     color:#444444;
 }
