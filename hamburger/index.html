@@ -89,6 +89,20 @@
 									</li>
 								</ul>
 							</li>
+							<li class="sub-2depth-open">
+								<a href="#">남성시계 모음전</a>
+								<span class="view-goods"><a href="#">상품보기</a></span>
+								<ul class="sub-3depth">
+									<li>
+										<a href="#">남성 가격대 모음</a>
+										<span class="view-goods"><a href="#">상품보기</a></span>										
+									</li>
+									<li>
+										<a href="#">남성 소재별 모음</a>
+										<span class="view-goods"><a href="#">상품보기</a></span>										
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 					<div class="gnb-subwrap cat02">
@@ -117,6 +131,42 @@
 						<div class="submenu-title">
 							<h3>브랜드 검색</h3>
 							<a href="#" class="sub-close">닫기</a>
+						</div>
+						<div class="brand-search">
+							<ul class="brand-option">
+								<li class="active"><a href="#" data-brand="brand01">ㄱ</a></li>
+								<li><a href="#" data-brand="brand02">ㄴ</a></li>
+								<li><a href="#" data-brand="brand03">ㄷ</a></li>
+								<li><a href="#" data-brand="brand04">ㄹ</a></li>
+								<li><a href="#" data-brand="brand05">ㅁ</a></li>
+								<li><a href="#" data-brand="brand06">ㅂ</a></li>
+								<li><a href="#" data-brand="brand07">ㅅ</a></li>
+								<li><a href="#" data-brand="brand08">ㅇ</a></li>
+								<li><a href="#" data-brand="brand09">ㅈ</a></li>
+								<li><a href="#" data-brand="brand10">ㅊ</a></li>
+								<li><a href="#" data-brand="brand11">ㅋ</a></li>
+								<li><a href="#" data-brand="brand12">ㅌ</a></li>
+								<li><a href="#" data-brand="brand13">ㅍ</a></li>
+								<li><a href="#" data-brand="brand14">ㅎ</a></li>
+								<li class="brand-etc"><a href="#" data-brand="brandEtc">ETC</a></li>								
+							</ul>
+							<div class="brand-search-bar">
+								<div class="brand-search-input">
+									<label for="brand_search">브랜드 검색</label>
+									<input type="text" name="brand_search" placeholder="브랜드명을 입력해주세요" />
+								</div>
+							</div>
+							<div class="brand-search-list">
+								<dl class="list-menu brand01">
+									<dt>ㄱ</dt>
+									<dd><a href="#">가가밀라노</a></dd>
+									<dd><a href="#">가민</a></dd>
+									<dd><a href="#">가이거</a></dd>
+									<dd><a href="#">게스</a></dd>
+									<dd><a href="#">게스컬렉션</a></dd>
+									<dd><a href="#">골든구스</a></dd>
+								</dl>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -195,12 +245,17 @@
         $(function() {
         	var sub_2depth = false;
         	var gnb_sideLeft = false;
+
+        	/* Hamburger Open */
         	$('.ani-menuBtn').click(function() {
 	        	$('html').addClass('gnb-sideLeft').addClass('no-scroll');
 	        	$('body').addClass('no-scroll');
 	        	$('#gnb-sideLeft').css({'display':'block'});
 	        	gnb_sideLeft = true;
         	});
+        	/* Hamburger Open */
+
+        	/* Hamburger Close */
         	$('.aside-close').click(function() {
         		$('html').removeClass('gnb-sideLeft').removeClass('no-scroll');
 	        	$('body').removeClass('no-scroll');
@@ -209,26 +264,33 @@
 	        		gnb_sideLeft = false;
 	        	}, 500);
         	});
+        	/* Hamburger Close */
+
+        	/* Sub 1depth-menu Open */
         	$('.aside-category li a').click(function() {
         		var subcat = $(this).data('cat');
         		$('.'+ subcat).addClass('open');
         	});
+        	/* Sub 1depth-menu Open */
 
+        	/* Sub 1depth-menu Close */
         	$('.sub-close').click(function() {
         		$('.gnb-subwrap').removeClass('open');
         	});
+        	/* Sub 1depth-menu Close */
 
+        	/* Sub 2depth-menu Close */ 
         	$('.sub-2depth-open').click(function() {
-        		if(sub_2depth == false) {
-	        		$(this).addClass('active');
-	        		sub_2depth = true;
-	        	}
-	        	else {
-	        		$(this).removeClass('active');
-	        		sub_2depth = false;	        		
-	        	}
-	        	return false;
+        		var sub_now = $(this);
+        		if(sub_now.hasClass('active')) {
+	        		$('.sub-2depth-open').removeClass('active');
+		        }
+		        else {
+	        		$('.sub-2depth-open').removeClass('active');
+		        	$(this).addClass('active');
+		        }
         	});
+        	/* Sub 2depth-menu Close */
         });
 	</script>
 </html>
