@@ -6,6 +6,7 @@
 	<title>타임메카 모바일 - Hamburger Menu</title>
 	<link href="css/reset.css" rel="stylesheet" />
 	<link href="css/header.1.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
 </head>
 <body>
 	<div id="wrap">
@@ -27,15 +28,15 @@
 					</div>
 					<div class="category-area">
 						<h2 class="category-title">카테고리 & 브랜드</h2>
-						<a href="#" class="aside-brands button-bg">전체 브랜드 검색</a>
 						<ul class="aside-category">
-							<li><a href="#">시계</a>	</li>
-							<li><a href="#">악세사리</a>	</li>
-							<li><a href="#">패션굿즈</a>	</li>
-							<li><a href="#">코스메틱</a>	</li>
-							<li><a href="#">프리미엄관</a></li>
-							<li><a href="#">디자이너관</a></li>
-							<li><a href="#">이벤트존</a></li>
+							<li><a href="#" data-cat="catAll" class="aside-brands button-bg">전체 브랜드 검색</a></li>
+							<li><a href="#" data-cat="cat01">시계</a></li>
+							<li><a href="#" data-cat="cat02">악세사리</a></li>
+							<li><a href="#" data-cat="cat03">패션굿즈</a></li>
+							<li><a href="#" data-cat="cat04">코스메틱</a></li>
+							<li><a href="#" data-cat="cat05">프리미엄관</a></li>
+							<li><a href="#" data-cat="cat06">디자이너관</a></li>
+							<li><a href="#" data-cat="cat07">이벤트존</a></li>
 						</ul>
 					</div>
 					<div class="planning-area">
@@ -68,11 +69,14 @@
 					</div>
 				</div>
 				<div class="gnb-submenu">
-					<div class="gnb-subwrap">
-						<h3>시계</h3>
+					<div class="gnb-subwrap cat01">
+						<div class="submenu-title">
+							<h3>시계</h3>
+							<a href="#" class="sub-close">닫기</a>
+						</div>
 						<ul class="sub-2depth">
-							<li>
-								<a href="#" class="sub-close">남성시계 모음전</a>
+							<li class="sub-2depth-open">
+								<a href="#">남성시계 모음전</a>
 								<span class="view-goods"><a href="#">상품보기</a></span>
 								<ul class="sub-3depth">
 									<li>
@@ -86,6 +90,34 @@
 								</ul>
 							</li>
 						</ul>
+					</div>
+					<div class="gnb-subwrap cat02">
+						<div class="submenu-title">
+							<h3>악세사리</h3>
+							<a href="#" class="sub-close">닫기</a>
+						</div>
+						<ul class="sub-2depth">
+							<li>
+								<a href="#">남성시계 모음전</a>
+								<span class="view-goods"><a href="#">상품보기</a></span>
+								<ul class="sub-3depth">
+									<li>
+										<a href="#">남성 가격대 모음</a>
+										<span class="view-goods"><a href="#">상품보기</a></span>										
+									</li>
+									<li>
+										<a href="#">남성 소재별 모음</a>
+										<span class="view-goods"><a href="#">상품보기</a></span>										
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="gnb-subwrap catAll">
+						<div class="submenu-title">
+							<h3>브랜드 검색</h3>
+							<a href="#" class="sub-close">닫기</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -161,6 +193,7 @@
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript">
         $(function() {
+        	var sub_2depth = false;
         	var gnb_sideLeft = false;
         	$('.ani-menuBtn').click(function() {
 	        	$('html').addClass('gnb-sideLeft').addClass('no-scroll');
@@ -176,11 +209,25 @@
 	        		gnb_sideLeft = false;
 	        	}, 500);
         	});
-        	$('.aside-brands').click(function() {
-        		$('.gnb-submenu').addClass('open');
+        	$('.aside-category li a').click(function() {
+        		var subcat = $(this).data('cat');
+        		$('.'+ subcat).addClass('open');
         	});
+
         	$('.sub-close').click(function() {
-        		$('.gnb-submenu').removeClass('open');
+        		$('.gnb-subwrap').removeClass('open');
+        	});
+
+        	$('.sub-2depth-open').click(function() {
+        		if(sub_2depth == false) {
+	        		$(this).addClass('active');
+	        		sub_2depth = true;
+	        	}
+	        	else {
+	        		$(this).removeClass('active');
+	        		sub_2depth = false;	        		
+	        	}
+	        	return false;
         	});
         });
 	</script>
