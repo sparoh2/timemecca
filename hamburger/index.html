@@ -136,30 +136,31 @@
 								<a href="#" class="sub-close">닫기</a>
 							</div>
 							<ul class="horizon-swiper fix-item-width brand-option">
-								<li class="horizon-item active"><a href="#brand01">ㄱ</a></li>
-								<li class="horizon-item"><a href="#brand02">ㄴ</a></li>
-								<li class="horizon-item"><a href="#brand03">ㄷ</a></li>
-								<li class="horizon-item"><a href="#brand04">ㄹ</a></li>
-								<li class="horizon-item"><a href="#brand05">ㅁ</a></li>
-								<li class="horizon-item"><a href="#brand06">ㅂ</a></li>
-								<li class="horizon-item"><a href="#brand07">ㅅ</a></li>
-								<li class="horizon-item"><a href="#brand08">ㅇ</a></li>
-								<li class="horizon-item"><a href="#brand09">ㅈ</a></li>
-								<li class="horizon-item"><a href="#brand10">ㅊ</a></li>
-								<li class="horizon-item"><a href="#brand11">ㅋ</a></li>
-								<li class="horizon-item"><a href="#brand12">ㅌ</a></li>
-								<li class="horizon-item"><a href="#brand13">ㅍ</a></li>
-								<li class="horizon-item"><a href="#brand14">ㅎ</a></li>
+								<li class="horizon-item active" data-active="brand01"><a href="#">ㄱ</a></li>
+								<li class="horizon-item" data-active="brand02"><a href="#">ㄴ</a></li>
+								<li class="horizon-item" data-active="brand03"><a href="#">ㄷ</a></li>
+								<li class="horizon-item" data-active="brand04"><a href="#">ㄹ</a></li>
+								<li class="horizon-item" data-active="brand05"><a href="#">ㅁ</a></li>
+								<li class="horizon-item" data-active="brand06"><a href="#">ㅂ</a></li>
+								<li class="horizon-item" data-active="brand07"><a href="#">ㅅ</a></li>
+								<li class="horizon-item" data-active="brand08"><a href="#">ㅇ</a></li>
+								<li class="horizon-item" data-active="brand09"><a href="#">ㅈ</a></li>
+								<li class="horizon-item" data-active="brand10"><a href="#">ㅊ</a></li>
+								<li class="horizon-item" data-active="brand11"><a href="#">ㅋ</a></li>
+								<li class="horizon-item" data-active="brand12"><a href="#">ㅌ</a></li>
+								<li class="horizon-item" data-active="brand13"><a href="#">ㅍ</a></li>
+								<li class="horizon-item" data-active="brand14"><a href="#">ㅎ</a></li>
+								<li class="horizon-item" data-active="brand15"><a href="#">기타</a></li>
 							</ul>
 						</div>							
-						<div class="brand-search swiper-section">
+						<div class="brand-search" id="brand-search">
 							<div class="brand-search-bar" style="display:none;">
 								<div class="brand-search-input">
 									<label for="brand_search">브랜드 검색</label>
 									<input type="text" name="brand_search" placeholder="브랜드명을 입력해주세요" />
 								</div>								
 							</div>
-							<div class="brand-search-list">
+							<div class="brand-search-list" id="brand-search-list">
 								<dl class="list-menu" id="brand01">
 									<dt>ㄱ</dt>
 									<dd><a href="#">가가밀라노</a></dd>
@@ -232,7 +233,7 @@
 									<dd><a href="#">게스컬렉션</a></dd>
 									<dd><a href="#">골든구스</a></dd>
 								</dl>
-								<dl class="list-menu" id="brand06">
+								<dl class="list-menu" id="brand09">
 									<dt>ㅈ</dt>
 									<dd><a href="#">가가밀라노</a></dd>
 									<dd><a href="#">가민</a></dd>
@@ -241,7 +242,7 @@
 									<dd><a href="#">게스컬렉션</a></dd>
 									<dd><a href="#">골든구스</a></dd>
 								</dl>
-								<dl class="list-menu" id="brand06">
+								<dl class="list-menu" id="brand10">
 									<dt>ㅊ</dt>
 									<dd><a href="#">가가밀라노</a></dd>
 									<dd><a href="#">가민</a></dd>
@@ -250,7 +251,7 @@
 									<dd><a href="#">게스컬렉션</a></dd>
 									<dd><a href="#">골든구스</a></dd>
 								</dl>
-								<dl class="list-menu" id="brand06">
+								<dl class="list-menu" id="brand11">
 									<dt>ㅋ</dt>
 									<dd><a href="#">가가밀라노</a></dd>
 									<dd><a href="#">가민</a></dd>
@@ -259,7 +260,7 @@
 									<dd><a href="#">게스컬렉션</a></dd>
 									<dd><a href="#">골든구스</a></dd>
 								</dl>
-								<dl class="list-menu" id="brand06">
+								<dl class="list-menu" id="brand12">
 									<dt>ㅌ</dt>
 									<dd><a href="#">가가밀라노</a></dd>
 									<dd><a href="#">가민</a></dd>
@@ -268,7 +269,7 @@
 									<dd><a href="#">게스컬렉션</a></dd>
 									<dd><a href="#">골든구스</a></dd>
 								</dl>
-								<dl class="list-menu" id="brand06">
+								<dl class="list-menu" id="brand13">
 									<dt>ㅍ</dt>
 									<dd><a href="#">가가밀라노</a></dd>
 									<dd><a href="#">가민</a></dd>
@@ -277,7 +278,7 @@
 									<dd><a href="#">게스컬렉션</a></dd>
 									<dd><a href="#">골든구스</a></dd>
 								</dl>
-								<dl class="list-menu" id="brand06">
+								<dl class="list-menu" id="brand14">
 									<dt>ㅎ</dt>
 									<dd><a href="#">가가밀라노</a></dd>
 									<dd><a href="#">가민</a></dd>
@@ -392,12 +393,14 @@
         	$('.aside-category li a').click(function() {
         		var subcat = $(this).data('cat');
         		$('.'+ subcat).addClass('open');
+        		$('#gnb-sideLeft').css({'overflow':'hidden'});
         	});
         	/* Sub 1depth-menu Open */
 
         	/* Sub 1depth-menu Close */
         	$('.sub-close').click(function() {
         		$('.gnb-subwrap').removeClass('open');
+        		$('#gnb-sideLeft').css({'overflow':'auto'});
         	});
         	/* Sub 1depth-menu Close */
 
@@ -414,21 +417,71 @@
         	});
         	/* Sub 2depth-menu Close */
         });
-	</script>
-	<script>
-	$('.horizon-item').on('click', function(event) {
-	    $('.horizon-item').removeClass('active');
-	    $(this).addClass('active');
-	});
 
-	$('brand-search-list').on('scroll', function() {
-	    $('.list-menu').each(function() {
-	        if($('.brand-search-list').scrollTop() >= $(this).offset().top) {
-	            var id = $(this).attr('id');
-	            $('.horizon-item').removeClass('active');
-	            $('.horizon-item a[href=#'+ id +']').parent('.horizon-item').addClass('active');
-	        }
-	    });
-	});
-	</script>
+		$('.horizon-item').on('click', function(e) {
+			if( !$(this).hasClass('active')) {
+				$('.horizon-item').removeClass('active');
+				$(this).addClass('active');
+			    var horizon_data = $(this).data('active');
+			    console.log(horizon_data);
+			    $('#brand-search-list').animate( {
+			    	scrollTop:$('#'+horizon_data).offset().top - 120
+			    }, 500);
+			}
+		});
+
+		/* Brand Search Active */
+		$(function() {
+			$('#brand-search-list').on('scroll', function() {
+			    $('.list-menu').each(function() {
+			        if($('#brand-search').scrollTop() >= $(this).offset().top - 120) {
+			            var id = $(this).attr('id');
+	            		$('.horizon-item').removeClass('active');
+	            		$('.horizon-item[data-active = '+ id +']').addClass('active');
+			        }
+			    });
+			});
+		});
+		/* Brand Search Active */
+
+		/* Hamburger Touch Down Drag Action */
+		var dragFlag = false;
+		var x, y, pre_x, pre_y;
+
+		$(function () {
+			$('#brand-search-list').mousedown(
+				function (e) {
+					dragFlag = true;
+					var obj = $(this);
+					x = obj.scrollLeft();
+					y = obj.scrollTop();
+
+					pre_x = e.screenX;
+					pre_y = e.screenY;					
+
+					$(this).css("cursor", "pointer");
+				}
+			);
+
+			$('#brand-search-list').mousemove(
+				function (e) {
+					if (dragFlag) {
+						var obj = $(this);
+						obj.scrollLeft(x - e.screenX + pre_x);
+						obj.scrollTop(y - e.screenY + pre_y);
+
+						return false;
+					}
+				}
+			);
+
+			$('#brand-search-list').mouseup(
+				function () {
+					dragFlag = false;
+					$(this).css("cursor", "default");
+				}
+			);
+		}); 
+		/* Hamburger Touch Down Drag Action */
+		</script>
 </html>
