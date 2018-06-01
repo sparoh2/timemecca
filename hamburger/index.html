@@ -70,7 +70,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="gnb-submenu">
+				<div class="gnb-submenu" id="gnb-submenu">
 					<div class="gnb-subwrap cat01">
 						<div class="submenu-title">
 							<h3>시계</h3>
@@ -404,7 +404,7 @@
 	        	$('html').addClass('gnb-sideLeft').addClass('no-scroll');
 	        	$('body').addClass('no-scroll');
 	        	$('#gnb-sideLeft').css({'display':'block'});
-	        	$('.gnb-submenu').css({'display':'block'});
+	        	$('#gnb-submenu').css({'display':'block'});
 	        	gnb_sideLeft = true;
         	});
         	/* Hamburger Open */
@@ -413,7 +413,7 @@
         	$('.aside-close').click(function() {
         		$('html').removeClass('gnb-sideLeft').removeClass('no-scroll');
 	        	$('body').removeClass('no-scroll');
-	        	$('.gnb-submenu').css({'display':'none'});
+	        	$('#gnb-submenu').css({'display':'none'});
         		setTimeout(function() {
 		        	$('#gnb-sideLeft').css({'display':'none'});
 	        		gnb_sideLeft = false;
