@@ -169,24 +169,54 @@
 									<dd><a href="#">게스</a></dd>
 									<dd><a href="#">게스컬렉션</a></dd>
 									<dd><a href="#">골든구스</a></dd>
+									<dd><a href="#">가가밀라노</a></dd>
+									<dd><a href="#">가민</a></dd>
+									<dd><a href="#">가이거</a></dd>
+									<dd><a href="#">게스</a></dd>
+									<dd><a href="#">게스컬렉션</a></dd>
+									<dd><a href="#">골든구스</a></dd>
+									<dd><a href="#">가가밀라노</a></dd>
+									<dd><a href="#">가민</a></dd>
+									<dd><a href="#">가이거</a></dd>
+									<dd><a href="#">게스</a></dd>
+									<dd><a href="#">게스컬렉션</a></dd>
+									<dd><a href="#">골든구스</a></dd>
+									<dd><a href="#">가가밀라노</a></dd>
+									<dd><a href="#">가민</a></dd>
+									<dd><a href="#">가이거</a></dd>
+									<dd><a href="#">게스</a></dd>
+									<dd><a href="#">게스컬렉션</a></dd>
+									<dd><a href="#">골든구스</a></dd>									
 								</dl>
 								<dl class="list-menu" id="brand02">
 									<dt>ㄴ</dt>
-									<dd><a href="#">가가밀라노</a></dd>
-									<dd><a href="#">가민</a></dd>
-									<dd><a href="#">가이거</a></dd>
-									<dd><a href="#">게스</a></dd>
-									<dd><a href="#">게스컬렉션</a></dd>
-									<dd><a href="#">골든구스</a></dd>
+									<dd><a href="#">나가밀라노</a></dd>
+									<dd><a href="#">나민</a></dd>
+									<dd><a href="#">나이거</a></dd>
+									<dd><a href="#">나스</a></dd>
+									<dd><a href="#">나스컬렉션</a></dd>
+									<dd><a href="#">나든구스</a></dd>
+									<dd><a href="#">나가밀라노</a></dd>
+									<dd><a href="#">나민</a></dd>
+									<dd><a href="#">나이거</a></dd>
+									<dd><a href="#">나스</a></dd>
+									<dd><a href="#">나스컬렉션</a></dd>
+									<dd><a href="#">나든구스</a></dd>
+									<dd><a href="#">나가밀라노</a></dd>
+									<dd><a href="#">나민</a></dd>
+									<dd><a href="#">나이거</a></dd>
+									<dd><a href="#">나스</a></dd>
+									<dd><a href="#">나스컬렉션</a></dd>
+									<dd><a href="#">나든구스</a></dd>
 								</dl>
 								<dl class="list-menu" id="brand03">
 									<dt>ㄷ</dt>
-									<dd><a href="#">가가밀라노</a></dd>
-									<dd><a href="#">가민</a></dd>
-									<dd><a href="#">가이거</a></dd>
-									<dd><a href="#">게스</a></dd>
-									<dd><a href="#">게스컬렉션</a></dd>
-									<dd><a href="#">골든구스</a></dd>
+									<dd><a href="#">다가밀라노</a></dd>
+									<dd><a href="#">다민</a></dd>
+									<dd><a href="#">다이거</a></dd>
+									<dd><a href="#">다스</a></dd>
+									<dd><a href="#">다스컬렉션</a></dd>
+									<dd><a href="#">다든구스</a></dd>
 								</dl>
 								<dl class="list-menu" id="brand04">
 									<dt>ㄹ</dt>
@@ -423,14 +453,16 @@
 				$('.horizon-item').removeClass('active');
 				$(this).addClass('active');
 			    var horizon_data = $(this).data('active');
-			    console.log(horizon_data);
+			    $('.list-menu').css({'display':'none'});
+			    $('#'+horizon_data).css({'display':'block'});
+			    /* console.log(horizon_data);
 			    $('#brand-search-list').animate( {
 			    	scrollTop:$('#'+horizon_data).offset().top - 120
-			    }, 500);
+			    }, 500); */
 			}
 		});
 
-		/* Brand Search Active */
+		/* Brand Search Active
 		$(function() {
 			$('#brand-search-list').on('scroll', function() {
 			    $('.list-menu').each(function() {
@@ -442,7 +474,7 @@
 			    });
 			});
 		});
-		/* Brand Search Active */
+		Brand Search Active */
 
 		/* Hamburger Touch Down Drag Action */
 		var dragFlag = false;
