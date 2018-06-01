@@ -396,9 +396,6 @@
 	<script src="js/horizon_main.js"></script>
 	<script type="text/javascript">
         $(function() {
-        	var sub_2depth = false;
-        	var gnb_sideLeft = false;
-
         	/* Hamburger Open */
         	$('.ani-menuBtn').click(function() {
 	        	$('html').addClass('gnb-sideLeft').addClass('no-scroll');
@@ -416,7 +413,6 @@
 	        	$('#gnb-submenu').css({'display':'none'});
         		setTimeout(function() {
 		        	$('#gnb-sideLeft').css({'display':'none'});
-	        		gnb_sideLeft = false;
 	        	}, 500);
         	});
         	/* Hamburger Close */
