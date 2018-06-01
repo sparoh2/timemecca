@@ -2202,7 +2202,7 @@ html.gnb-sideLeft #blocked {
     display:block;
     position:relative;
     padding-left:25px;
-    font-size:13px;
+    font-size:2.6vw;
     font-weight:600;
     font-family:'Open Sans',sans-serif;
     letter-spacing:-0.03em;
