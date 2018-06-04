@@ -2131,16 +2131,16 @@ html.gnb-sideLeft #blocked {
     background-size:138px 163px;
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage1 a::before {
-    background-position: 3px -108px;    
+    background-position: 3px -105px;    
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage2 a::before {
-    background-position: -23px -108px;    
+    background-position: -23px -105px;    
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage3 a::before {
-    background-position: -51px -108px;    
+    background-position: -51px -105px;    
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage4 a::before {
-    background-position: -77px -108px;    
+    background-position: -77px -105px;    
 }
 .gnb-innerWrap .cs-area .cs-list li a {
     font-family:'Nanum Gothic',sans-serif;
