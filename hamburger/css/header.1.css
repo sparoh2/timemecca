@@ -2117,7 +2117,7 @@ html.gnb-sideLeft #blocked {
     padding:10px 15px;
 }
 .gnb-innerWrap .cs-area .cs-list li {
-    padding:10px 0;
+    padding: 7px 0;
 }
 .gnb-innerWrap .cs-area .cs-list li a::before {
     content:'';
@@ -2131,16 +2131,16 @@ html.gnb-sideLeft #blocked {
     background-size:138px 163px;
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage1 a::before {
-    background-position: 3px -105px;    
+    background-position: -3px -106px;
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage2 a::before {
-    background-position: -23px -105px;    
+    background-position: -29px -106px;
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage3 a::before {
-    background-position: -51px -105px;    
+    background-position: -56px -106px;
 }
 .gnb-innerWrap .cs-area .cs-list li.cspage4 a::before {
-    background-position: -77px -105px;    
+    background-position: -82px -106px;
 }
 .gnb-innerWrap .cs-area .cs-list li a {
     font-family:'Nanum Gothic',sans-serif;
@@ -2149,7 +2149,7 @@ html.gnb-sideLeft #blocked {
     color:#2e3138;
     line-height:14px;
     position:relative;
-    padding-left:35px;
+    padding-left: 30px;
 }
 .gnb-innerWrap .app-area {
     background:#fff;
