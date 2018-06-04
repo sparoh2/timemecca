@@ -2198,7 +2198,6 @@ html.gnb-sideLeft #blocked {
     position:absolute;
     top:2px;
     left:50%;
-    margin-left:-8px;
 }
 .gnb-innerWrap .app-info .app-list li {
     flex-grow:2;
