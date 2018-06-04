@@ -2153,30 +2153,37 @@ html.gnb-sideLeft #blocked {
 }
 .gnb-innerWrap .app-area {
     background:#fff;
-    padding:15px;
+    padding:10px;
     box-sizing:border-box;
     overflow:hidden;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display:table;
+    table-layout:fixed;
+    width:100%;
 }
 .gnb-innerWrap .app-timemecca {
-    flex-grow:1;
-    margin-right:10px;
+    display:table-cell;
+    vertical-align:middle;
+    width:20%;
+}
+.gnb-innerWrap .app-timemecca img {
+    width:100%;
 }
 .gnb-innerWrap .app-info {
-    flex-grow:5;
+    display:table-cell;
+    vertical-align:middle;
+    width:80%;
+    padding:10px;
 }
 .gnb-innerWrap .app-info h4 {
     font-family:'Nanum Gothic',sans-serif;
-    font-size:15px;
+    font-size:14px;
     font-weight:600;
     letter-spacing:-0.05em;
     color:#2e3138;
 }
 .gnb-innerWrap .app-info strong {
     font-family:'Nanum Gothic',sans-serif;
-    font-size:13px;
+    font-size:12px;
     font-weight:400;
     letter-spacing:-0.05em;
     color:#7c7c7c;
@@ -2185,7 +2192,7 @@ html.gnb-sideLeft #blocked {
     display:flex;
     justify-content:left;
     align-items:center;
-    margin-top:10px;
+    margin-top:3px;
     position:relative;
 }
 .gnb-innerWrap .app-info .app-list::after {
@@ -2216,7 +2223,7 @@ html.gnb-sideLeft #blocked {
     display:block;
     position:relative;
     padding-left:28px;
-    font-size: 0.8rem;
+    font-size:12px;
     font-weight:600;
     font-family:'Lato',sans-serif;
     line-height:150%;
