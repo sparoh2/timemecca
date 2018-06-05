@@ -2300,6 +2300,10 @@ html.gnb-sideLeft #blocked {
     right:20px;
     z-index:1000;
 }
+.gnb-submenu .gnb-subwrap .sub-2depth {
+    height:600px;
+    overflow:hidden;
+}
 .gnb-submenu .gnb-subwrap .sub-2depth > li {
     border-top:1px solid #e4e4e4;
     position:relative;
