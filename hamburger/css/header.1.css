@@ -1861,8 +1861,8 @@ html.gnb-sideLeft #blocked {
 .gnbWrap {
   position:relative;
   width:100%;
+  height:100%;
   background:#fff;
-  overflow-x:hidden;
 }
 .gnb-innerWrap {
   width: 86%;

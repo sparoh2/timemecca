@@ -582,6 +582,10 @@
         (function($) {
             var jQuery = $;
 
+            $('#gnb-sideLeft').scroll(function() {
+        		console.log( $(this).scrollTop() );	
+            })
+
         	/* Hamburger Open */
         	$('.ani-menuBtn').click(function() {
 	        	$('html').addClass('gnb-sideLeft').addClass('no-scroll');
@@ -608,7 +612,7 @@
      		    var gnb_posY = $('#gnb-sideLeft').scrollTop();
         		$('.'+ subcat).addClass('open');
         		$('#gnb-sideLeft').css({'overflow':'hidden'});
-        		$('.gnb-subwrap.open').css({'top':''+ gnb_posY +'px'});        		
+        		$('.gnb-subwrap.open').css({'top':'' + gnb_posY + 'px'});        		
         	})
         	/* Sub 1depth-menu Open */
 
