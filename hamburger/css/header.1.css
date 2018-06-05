@@ -1809,7 +1809,8 @@ a.mini,button.mini{height:26px;line-height:24px;font-size:11px }
   top:0px;
   left:0;
   z-index:0;
-  overflow:auto;
+  overflow-x:hidden;
+  overflow-y:auto;
   transform: translate(-100%,0);
   -webkit-transform: translate(-100%,0);
   -moz-transform: translate(-100%,0);
