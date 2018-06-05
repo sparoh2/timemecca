@@ -72,7 +72,7 @@
 					</div>
 				</div>
 				<div class="gnb-submenu" id="gnb-submenu">
-					<div class="gnb-subwrap cat01" id="gnb-subwrap">
+					<div class="gnb-subwrap cat01">
 						<div class="submenu-title">
 							<h3>시계</h3>
 							<a href="#" class="sub-close">닫기</a>
@@ -580,11 +580,7 @@
 	<script type="text/javascript">
         window.jQuery1_12_4 = jQuery.noConflict(true);
         (function($) {
-            var jQuery = $;
-
-            $('#gnb-sideLeft').scroll(function() {
-        		console.log( $(this).scrollTop() );	
-            })
+            var jQuery = $;		
 
         	/* Hamburger Open */
         	$('.ani-menuBtn').click(function() {
@@ -609,10 +605,8 @@
         	/* Sub 1depth-menu Open */
         	$('.aside-category li a').click(function() {
         		var subcat = $(this).data('cat');
-     		    var gnb_posY = $('#gnb-sideLeft').scrollTop();
         		$('.'+ subcat).addClass('open');
         		$('#gnb-sideLeft').css({'overflow':'hidden'});
-        		$('.gnb-subwrap.open').css({'top':'' + gnb_posY + 'px'});        		
         	})
         	/* Sub 1depth-menu Open */
 
