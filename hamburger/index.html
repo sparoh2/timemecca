@@ -32,14 +32,14 @@
 					<div class="category-area">
 						<h2 class="category-title">카테고리 & 브랜드</h2>
 						<ul class="aside-category">
-							<li><a href="#" data-cat="catAll" class="aside-brands aside-cat-open">전체 브랜드 검색</a></li>
-							<li><a href="#" data-cat="cat01" class="aside-cat-open">시계</a></li>
-							<li><a href="#" data-cat="cat02" class="aside-cat-open">악세사리</a></li>
-							<li><a href="#" data-cat="cat03" class="aside-cat-open">패션굿즈</a></li>
-							<li><a href="#" data-cat="cat04" class="aside-cat-open">코스메틱</a></li>
-							<li><a href="#">프리미엄관</a></li>
-							<li><a href="#">디자이너관</a></li>
-							<li><a href="#">이벤트존</a></li>
+							<li><a href="javascript:;" data-cat="catAll" class="aside-brands aside-cat-open">전체 브랜드 검색</a></li>
+							<li><a href="javascript:;" data-cat="cat01" class="aside-cat-open">시계</a></li>
+							<li><a href="javascript:;" data-cat="cat02" class="aside-cat-open">악세사리</a></li>
+							<li><a href="javascript:;" data-cat="cat03" class="aside-cat-open">패션굿즈</a></li>
+							<li><a href="javascript:;" data-cat="cat04" class="aside-cat-open">코스메틱</a></li>
+							<li><a href="javascript:;">프리미엄관</a></li>
+							<li><a href="javascript:;">디자이너관</a></li>
+							<li><a href="javascript:;">이벤트존</a></li>
 						</ul>
 					</div>
 					<div class="planning-area">
@@ -734,7 +734,7 @@
 			<div id="contents">
 				<img src="img/timemecca_body.jpg" alt="Timemecca" width="100%" />
 			</div>
-			<a href="#none" id="blocked" class="aside-close"></a>
+			<a href="javascript:;" id="blocked" class="aside-close"></a>
 		</div>
 	</div>
 </body>
@@ -771,7 +771,8 @@
         	/* Hamburger Close */
 
         	/* Category & Brands (Sub 1depth-menu) Open */
-        	$('.aside-cat-open').click(function() {
+        	$('.aside-cat-open').click(function(e) {
+        		e.preventDefault();
         		var subcat = $(this).data('cat');
      		    var gnb_posY = $('#gnb-sideLeft').scrollTop();
         		$('.'+ subcat).addClass('open');
