@@ -1920,7 +1920,7 @@ html.gnb-sideLeft #blocked {
     color: #444444;
 }
 .aside-close,
-.sub-close {
+.aside-cat-close {
     text-indent: -1000em;
     display: block;
     width: 26px;
@@ -2294,7 +2294,7 @@ html.gnb-sideLeft #blocked {
     line-height:100%;
     letter-spacing:-0.03em;
 }
-.gnb-submenu .gnb-subwrap .submenu-title .sub-close {
+.gnb-submenu .gnb-subwrap .submenu-title .aside-cat-close {
     position:absolute;
     top:15px;
     right:20px;

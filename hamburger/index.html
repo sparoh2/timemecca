@@ -75,9 +75,9 @@
 					<div class="gnb-subwrap cat01" id="gnb-subwrap">
 						<div class="submenu-title">
 							<h3>시계</h3>
-							<a href="#" class="sub-close">닫기</a>
+							<a href="#" class="aside-cat-close">닫기</a>
 						</div>
-						<ul class="sub-2depth">
+						<ul class="sub-2depth aside-drag">
 							<li class="sub-2depth-open">
 								<a href="#">남성시계 모음전</a>
 								<span class="view-goods"><a href="#">상품보기</a></span>
@@ -106,7 +106,7 @@
 									</li>
 								</ul>
 							</li>
-							<li class="sub-2depth-open">
+							<li>
 								<a href="#">커플시계 모음전</a>
 								<span class="view-goods"><a href="#">상품보기</a></span>
 							</li>
@@ -187,9 +187,9 @@
 					<div class="gnb-subwrap cat02">
 						<div class="submenu-title">
 							<h3>악세사리</h3>
-							<a href="#" class="sub-close">닫기</a>
+							<a href="#" class="aside-cat-close">닫기</a>
 						</div>
-						<ul class="sub-2depth">
+						<ul class="sub-2depth aside-drag">
 							<li>
 								<a href="#">구찌 쥬얼리</a>
 								<span class="view-goods"><a href="#">상품보기</a></span>
@@ -241,9 +241,9 @@
 					<div class="gnb-subwrap cat03">
 						<div class="submenu-title">
 							<h3>패션굿즈</h3>
-							<a href="#" class="sub-close">닫기</a>
+							<a href="#" class="aside-cat-close">닫기</a>
 						</div>
-						<ul class="sub-2depth">									
+						<ul class="sub-2depth aside-drag">									
 							<li class="sub-2depth-open">
 								<a href="#">가방/지갑</a>
 								<span class="view-goods"><a href="#">상품보기</a></span>
@@ -343,7 +343,7 @@
 					<div class="gnb-subwrap cat04">
 						<div class="submenu-title">
 							<h3>코스메틱</h3>
-							<a href="#" class="sub-close">닫기</a>
+							<a href="#" class="aside-cat-close">닫기</a>
 						</div>
 						<ul class="sub-2depth aside-drag">									
 							<li>
@@ -404,7 +404,7 @@
 						<div class="search-head">
 							<div class="submenu-title">
 								<h3>브랜드 검색</h3>
-								<a href="#" class="sub-close">닫기</a>
+								<a href="#" class="aside-cat-close">닫기</a>
 							</div>
 							<ul class="horizon-swiper fix-item-width brand-option">
 								<li class="horizon-item active" data-active="brand01"><a href="#">ㄱ</a></li>
@@ -770,7 +770,7 @@
         	})
         	/* Hamburger Close */
 
-        	/* Sub 1depth-menu Open */
+        	/* Category & Brands (Sub 1depth-menu) Open */
         	$('.aside-cat-open').click(function() {
         		var subcat = $(this).data('cat');
      		    var gnb_posY = $('#gnb-sideLeft').scrollTop();
@@ -778,15 +778,14 @@
         		$('#gnb-sideLeft').css({'overflow':'hidden'});
         		$('.gnb-subwrap.open').css({'top':'' + gnb_posY + 'px'});        		
         	})
-        	/* Sub 1depth-menu Open */
+        	/* Category & Brands (Sub 1depth-menu) Open */
 
-        	/* Sub 1depth-menu Close */
-        	$('.sub-close').click(function() {
-        		$('.gnb-subwrap').removeClass('open');
-        		$('#gnb-sideLeft').css({'overflow-x':'hidden'});
-        		$('#gnb-sideLeft').css({'overflow-y':'auto'});
+        	/* Category & Brands (Sub 1depth-menu) Close */
+        	$('.aside-cat-close').click(function() {
+        		$('.gnb-subwrap').removeClass('open').css({'top':'0px'});     
+        		$('#gnb-sideLeft').css({'overflow-x':'hidden'}).css({'overflow-y':'auto'});
         	})
-        	/* Sub 1depth-menu Close */
+        	/* Category & Brands (Sub 1depth-menu) Close */
 
         	/* Sub 2depth-menu Close */ 
         	$('.sub-2depth-open').click(function() {
@@ -801,6 +800,7 @@
         	})
         	/* Sub 2depth-menu Close */
 
+        	/* Brand Search Menu Drag Action */
 			$('.horizon-item').on('click', function(e) {
 				if( !$(this).hasClass('active')) {
 					$('.horizon-item').removeClass('active');
@@ -814,6 +814,7 @@
 				    }, 500); */
 				}
 			})
+        	/* Brand Search Menu Drag Action */
 
 			/* Hamburger Touch Down Drag Action */
 			var dragFlag = false;
