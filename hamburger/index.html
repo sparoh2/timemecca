@@ -693,7 +693,7 @@
 				        <div>
 				            <div id="titArea" data-id="logo" data-fixed-id="fixed" class="">
 				                <p class="category">
-				                    <a href="#none" class="ani-menuBtn">
+				                    <a href="#" class="ani-menuBtn aside-open">
 										<span class="line1"></span>
 										<span class="line2"></span>
 										<span class="line3"></span>
@@ -751,7 +751,8 @@
             })
 
         	/* Hamburger Open */
-        	$('.ani-menuBtn').click(function() {
+        	$('.aside-open').click(function(e) {
+        		e.preventDefault();
 	        	$('html').addClass('gnb-sideLeft').addClass('no-scroll');
 	        	$('body').addClass('no-scroll');
 	        	$('#gnb-sideLeft').css({'display':'block'});
@@ -760,7 +761,8 @@
         	/* Hamburger Open */
 
         	/* Hamburger Close */
-        	$('.aside-close').click(function() {
+        	$('.aside-close').click(function(e) {
+        		e.preventDefault();
         		$('html').removeClass('gnb-sideLeft').removeClass('no-scroll');
 	        	$('body').removeClass('no-scroll');
 	        	$('.gnb-subwrap').removeClass('open');
@@ -784,7 +786,8 @@
         	/* Category & Brands (Sub 1depth-menu) Open */
 
         	/* Category & Brands (Sub 1depth-menu) Close */
-        	$('.aside-cat-close').click(function() {
+        	$('.aside-cat-close').click(function(e) {
+   		        e.preventDefault();
         		$('.gnb-subwrap').removeClass('open').css({'top':'0px'});     
         		$('#gnb-sideLeft').css({'overflow-x':'hidden'}).css({'overflow-y':'auto'});
         	})
