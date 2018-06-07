@@ -2302,7 +2302,7 @@ html.gnb-sideLeft #blocked {
     z-index:1000;
 }
 .gnb-submenu .gnb-subwrap .sub-2depth {
-    height:500px;
+    height:420px;
     overflow-y:scroll;
 }
 .gnb-submenu .gnb-subwrap .sub-2depth > li {
@@ -2409,8 +2409,11 @@ html.gnb-sideLeft #blocked {
 .gnb-submenu .gnb-subwrap .search-head .brand-option {
     width:auto;
     height:45px;
-    padding:13px 15px 0;
+    padding:13px 20px 0;
     margin:0px auto;
+}
+.gnb-submenu .gnb-subwrap .search-head .brand-option .horizon-outer {
+    max-height:26px !important;
 }
 .gnb-submenu .gnb-subwrap .search-head .brand-option li {
     width:32px !important;
@@ -2476,7 +2479,7 @@ html.gnb-sideLeft #blocked {
     border-radius:5px;
 }
 .gnb-submenu .gnb-subwrap .brand-search .brand-search-list {
-    height:500px;
+    height:420px;
     overflow-y:scroll;
 }
 .gnb-submenu .gnb-subwrap .brand-search .brand-search-list .list-menu {
