@@ -2356,8 +2356,11 @@ html.gnb-sideLeft #blocked {
     letter-spacing:-0.1em;
     border-radius:3px;
     padding:5px;
+    border:1px solid #adadad;
+    color:#787878;
+    background:#fff;
 }
-.gnb-submenu .gnb-subwrap .sub-2depth > li > .view-goods > a {
+.gnb-submenu .gnb-subwrap .sub-2depth > li.active > .view-goods > a {
     border:1px solid #ff2523;
     color:#ff2523;
     background:#fff;

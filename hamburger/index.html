@@ -793,18 +793,19 @@
         	})
         	/* Category & Brands (Sub 1depth-menu) Close */
 
-        	/* Sub 2depth-menu Close */ 
-        	$('.sub-2depth-open').click(function() {
-        		var sub_now = $(this);
+        	/* Sub 2depth-menu Open & Close */ 
+        	$('.sub-2depth-open > a').click(function(e) {
+                e.preventDefault();
+        		var sub_now = $(this).parent('.sub-2depth-open');
         		if(sub_now.hasClass('active')) {
 	        		$('.sub-2depth-open').removeClass('active');
 		        }
 		        else {
 	        		$('.sub-2depth-open').removeClass('active');
-		        	$(this).addClass('active');
+		        	$(this).parent('.sub-2depth-open').addClass('active');
 		        }
         	})
-        	/* Sub 2depth-menu Close */
+        	/* Sub 2depth-menu Open & Close */
 
         	/* Brand Search Menu Drag Action */
 			$('.horizon-item').on('click', function(e) {
