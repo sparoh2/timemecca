@@ -2302,7 +2302,7 @@ html.gnb-sideLeft #blocked {
     z-index:1000;
 }
 .gnb-submenu .gnb-subwrap .sub-2depth {
-    height:540px;
+    height:500px;
     overflow-y:scroll;
 }
 .gnb-submenu .gnb-subwrap .sub-2depth > li {
@@ -2476,7 +2476,7 @@ html.gnb-sideLeft #blocked {
     border-radius:5px;
 }
 .gnb-submenu .gnb-subwrap .brand-search .brand-search-list {
-    height:540px;
+    height:500px;
     overflow-y:scroll;
 }
 .gnb-submenu .gnb-subwrap .brand-search .brand-search-list .list-menu {
