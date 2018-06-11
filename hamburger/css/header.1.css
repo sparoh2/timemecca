@@ -2251,7 +2251,7 @@ html.gnb-sideLeft #blocked {
 }
 .gnb-submenu .gnb-subwrap {
   position:absolute;
-  width:86%;
+  width:326px;
   height:100%;
   top:0;
   background:#fff;
