@@ -1823,18 +1823,18 @@ a.mini,button.mini{height:26px;line-height:24px;font-size:11px }
   -o-transition:-o-transform 0.4s ease 0.0s;  
 }
 html.gnb-sideLeft #gnb-sideLeft {
-  transform: translate(0%,0);
-  -webkit-transform: translate(0%,0);
-  -moz-transform: translate(0%,0);
-  -ms-transform: translate(0%,0);
-  -o-transform: translate(0%,0); 
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0); 
 }
 html.gnb-sideLeft #container {
-  transform: translate(85%,0);
-  -webkit-transform: translate(85%,0);
-  -moz-transform: translate(85%,0);
-  -ms-transform: translate(85%,0);
-  -o-transform: translate(85%,0);
+  transform: translate(320px,0);
+  -webkit-transform: translate(320px,0);
+  -moz-transform: translate(320px,0);
+  -ms-transform: translate(320px,0);
+  -o-transform: translate(320px,0);
 }
 #blocked {
     z-index: 500;
@@ -1866,10 +1866,10 @@ html.gnb-sideLeft #blocked {
   background:#fff;
 }
 .gnb-innerWrap {
-  width: 86%;
+  width: 320px;
   overflow:hidden;
   position:relative;
-  background:#ededed;  
+  background:#ededed;
 }
 .gnb-innerWrap::after {
     content:'';
