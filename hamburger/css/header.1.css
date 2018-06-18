@@ -1966,16 +1966,18 @@ html.gnb-sideLeft #blocked {
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage1::before {
     background:url(../img/icon_mypage1.png) no-repeat;    
-    background-size:30px 25px;
+    background-size:34px 27px;
+    background-position:0px 2px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage2::before {
     background:url(../img/icon_mypage2.png) no-repeat;    
-    background-size:35px 28px;
+    background-size:35px 30px;
+    background-position:0px 2px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage3::before {
     background:url(../img/icon_mypage3.png) no-repeat;    
-    background-size:34px 29px;
-    background-position:-2px 0px;
+    background-size:37px 32px;
+    background-position:-3px 0px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage4::before {
     background:url(../img/icon_mypage4.png) no-repeat;    
