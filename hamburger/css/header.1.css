@@ -1966,8 +1966,7 @@ html.gnb-sideLeft #blocked {
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage1::before {
     background:url(../img/icon_mypage1.png) no-repeat;
-    background-size: 36px 29
-    px;
+    background-size: 36px 29px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage2::before {
     background:url(../img/icon_mypage2.png) no-repeat;
