@@ -1960,32 +1960,30 @@ html.gnb-sideLeft #blocked {
 .gnb-innerWrap .mypage-area .mypage-list li a::before {
     content:'';
     display:block;
-    width:32px;
+    width: 36px;
     height:30px;
     margin:5px auto 4px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage1::before {
     background:url(../img/icon_mypage1.png) no-repeat;
-    background-size:34px 27px;
-    background-position: 0px 1px;
+    background-size: 38px 30px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage2::before {
     background:url(../img/icon_mypage2.png) no-repeat;
-    background-size:35px 30px;
-    background-position: 0px 0px;
+    background-size: 40px 31px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage3::before {
-    background:url(../img/icon_mypage3.png) no-repeat;    
-    background-size:37px 32px;
-    background-position:-3px 0px;
+    background:url(../img/icon_mypage3.png) no-repeat;
+    background-size: 40px 34px;
+    background-position: -2px 0px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage4::before {
-    background:url(../img/icon_mypage4.png) no-repeat;    
-    background-size:32px 27px;
+    background:url(../img/icon_mypage4.png) no-repeat;
+    background-size: 35px 29px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage5::before {
-    background:url(../img/icon_mypage5.png) no-repeat;    
-    background-size:32px 27px;
+    background:url(../img/icon_mypage5.png) no-repeat;
+    background-size: 35px 30px;
 }
 .gnb-innerWrap .category-area {
     margin:10px 0 10px;
