@@ -1961,7 +1961,7 @@ html.gnb-sideLeft #blocked {
     content:'';
     display:block;
     width:32px;
-    height:28px;
+    height:30px;
     margin:5px auto 4px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage1::before {
