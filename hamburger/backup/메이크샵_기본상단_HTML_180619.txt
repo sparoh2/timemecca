@@ -1,0 +1,447 @@
+﻿<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
+
+<aside id="gn-sideSlide-left" class="slideMenu">
+
+ 
+    <div class="inner">
+        <!-- WRAP -->
+        
+		<!--/if_login/-->
+			<p class="xans-element- xans-layout xans-layout-statelogon member ">환영합니다. 
+				<a href="<!--/link_mypage/-->"><strong><span class="xans-member-var-name"><!--/user_name/--></span></strong></a>
+				회원님 
+				<i class="fa fa-smile-o"></i>
+			</p>
+		<!--/else/-->
+			<p class="xans-element- xans-layout xans-layout-statelogoff guest ">고객님은 현재
+				<strong>로그아웃</strong> 중입니다.
+				<br><span>회원가입후 다양한 서비스를 이용해보세요.</span>
+			</p>
+			<ul class="xans-element- xans-layout xans-layout-statelogoff btnMember ">
+				<li class="btnLogin"><a href="<!--/link_login/-->">로그인</a></li>
+				<li class="btnJoin"><a href="<!--/link_join/-->">회원가입</a></li>
+			</ul>
+		<!--/end_if/-->
+
+        <style>
+            .s_left_brand {
+                position: relative;
+                display: inline-block;
+                margin: 10px 0;
+                width: 100%;
+                font-size: 0;
+                text-align: center;
+            }
+
+            .s_left_brand li {
+                display: inline-block;
+                width: 25%;
+                text-align: center;
+                font-size: 11px;
+                letter-spacing: -1px;
+            }
+
+            .s_left_brand .s_left_brand_text {
+                float: none;
+                width: 100%;
+                display: block;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: left;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+        </style>
+
+        <ul class="s_left_brand">
+            <li class="s_left_brand_text">추천 브랜드</li>
+            <li><a href="/m/product_list.html?type=N&xcode=017&mcode=008&scode=009"><img src="/design/timemecca/m/img/m_left_brand_01.jpg" alt="몽블랑"></a></li>
+            <li><a href="/m/product_list.html?xcode=027&type=Y&mcode=039&scode=007"><img src="/design/timemecca/m/img/m_left_brand_02.jpg" alt="티쏘"></a></li>
+            <li><a href="/m/product_list.html?type=N&xcode=019&mcode=014&scode=006&type=Y"><img src="/design/timemecca/m/img/m_left_brand_03.jpg" alt="판도라"></a></li>
+            <li><a href="/m/product_list.html?xcode=027&type=Y&mcode=080&scode=004"><img src="/design/timemecca/m/img/m_left_brand_04.jpg" alt="태그호이어"></a></li>
+        </ul>
+        <!-- 탭 -->
+        <ul class="tab liType1 mtl0-cols3">
+            <li class="selected"><a href="#none" data-tab-id="slideCateList">카테고리</a></li>
+            <li><a href="#none" data-tab-id="slidePromotion">기획전</a></li>
+            <li><a href="#none" data-tab-id="slideBoardList">게시판</a></li>
+        </ul>
+
+        <!-- 슬라이드 카테고리목록 -->
+        <div id="slideCateList" class="displayTab selected">
+            
+			<ul class="xans-element- xans-layout xans-layout-category">
+                
+				<!--/loop_category1/-->
+				<li class="xans-record- 1step">
+                    <a class="cate onoff" ><!--/category1@name/--></a>
+                    <a href="#none"  class="onoff cateArrow"></a>
+					<!--/if_category1@category2/-->
+					<ul class="slideSubMenu">
+						<!--/loop_category1@category2/-->
+						<li  class=""><a href="#none" class="cate onoff" cate="?cate_no=2758" onclick="subMenuEvent(this);"><!--/category1@category2@name/--></a>
+							<!--/if_category1@category2@category3/--><!--/loop_category1@category2@category3/--><!--/if_idx(1)/--><a href="<!--/category1@category2@category3@link/-->" class="btn-outline">상품보기</a><!--/end_if/--><!--/end_loop/--><!--/else/--><a href="<!--/category1@category2@link/-->" class="btn-outline">상품보기</a><!--/end_if/-->						
+							 <!--/if_category1@category2@category3/-->
+							<ul>
+								<!--/loop_category1@category2@category3/-->
+								<li class="noChild">
+									<a href="<!--/category1@category2@category3@link/-->" class="cate"><!--/category1@category2@category3@name/--></a>
+									<a href="<!--/category1@category2@category3@link/-->" class="btn-outline">상품보기</a>
+								</li>
+								<!--/end_loop/-->
+							</ul>
+							<!--/end_if/-->
+						</li>
+						<!--/end_loop/-->
+					</ul>
+					<!--/end_if/-->
+                </li>   
+				<!--/end_loop/-->
+				
+            </ul>
+
+        </div>
+
+
+
+        <!-- 슬라이드 기획전목록 -->
+        <div id="slidePromotion" class="displayTab">
+            <a href="/m/page.html?id=7" alt=""><img src="/design/timemecca/m/img/spring2018_planning_180221.jpg" alt="3월기획전 받고쓰고"></a>
+            <a href="/m/page.html?id=14" alt=""><img src="http://timemecca.img13.kr/web/new/jun2018/jun2018_planning_180504.jpg" alt="6월기획전 50M"></a>
+            <a href="/m/page.html?id=15" alt=""><img src="/design/timemecca/m/img/awards2018_planning_180312.jpg" alt="1위기획전 고객감사대전"></a>
+            <a href="/m/product_list.html?xcode=028&type=Y&mcode=007" alt=""><img src="/design/timemecca/m/img/top10_planning_180313.jpg" alt="top10"></a>
+            <a href="/m/product_list.html?xcode=028&type=Y&mcode=010" alt=""><img src="/design/timemecca/m/img/onlymecca_planning_180209.jpg" alt="기획특가 기획전"></a>
+            <a href="/m/product_list.html?xcode=016&type=Y" alt=""><img src="/design/timemecca/m/img/couple_planning_180117.jpg" alt="커플기획전"></a>
+            <a href="/m/page.html?id=9" alt=""><img src="/design/timemecca/m/img/fashion_planning_180105.jpg" alt="잡화점"></a>
+            <a href="/m/page.html?id=11" alt=""><img src="/design/timemecca/m/img/gift_planning_171219.jpg" alt="타임세일"></a>  
+            <a href="/m/page.html?id=6" alt=""><img src="/design/timemecca/m/img/gift_planning_180402.jpg" alt="리퍼기획전"></a>
+        </div>
+
+        <!-- 슬라이드 게시판목록 -->
+        <div id="slideBoardList" class="displayTab">
+            <ul class="xans-element- xans-layout xans-layout-boardinfo">
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board2">공지사항</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_image1">이벤트</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board3">FAQ</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board4">가격흥정게시판</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board1">구매후기</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca">상품문의</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board5">배송문의</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board6">배송 전 변경/취소</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board7">배송 후 교환/반품</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board8">AS 문의</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board11">설명서</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_board9">입점문의</a></li>
+                <li class="xans-record-"><a href="/m/board.html?code=timemecca_image2">고객중고거래 (중고시계/시계용품 등)</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <style>
+                .slide_kakao {
+                    display: inline-block;
+                    margin: 10px 0;
+                    width: 100%;
+                    font-size: 0;
+                }
+
+                .slide_kakao li {
+                    display: inline-block;
+                    width: 33%;
+                    text-align: center;
+                    font-size: 11px;
+                    letter-spacing: -1px;
+                }
+            </style>
+            <ul class="slide_kakao">
+                <li><a href="http://goto.kakao.com/@timemecca" target="_blank"><img src="/design/timemecca/m/img/m_kakao_icon.png" alt=""><br>실시간카톡</a></li>
+                <li><a href="/m/basket.html"><img src="/design/timemecca/m/img/m_basket_icon.png" alt=""><br>장바구니</a></li>
+                <li><a href="/m/order_list.html"><img src="/design/timemecca/m/img/m_orderlist_icon.png" alt=""><br>주문조회</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="slide_left_contents"></div>
+
+</aside>
+
+
+<aside id="gn-sideSlide-right" class="slideSearch">
+            <div class="inner">
+                <!-- WRAP -->
+                <!--/form_search/-->
+                    <div id="search_box" class="xans-element- xans-layout xans-layout-searchheader ">
+                        
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="searchForm">
+                                <p><!--/input_search_word/--></p>
+                                <button onclick="<!--/link_search_button/-->"  type="submit" class="btnSubmit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </fieldset>
+                        <style>
+                            .planning {
+                                padding: 0 7px;
+                                background-color: #f1f1f1;
+                            }
+
+                            .planning li {
+                                margin: 3px 0;
+                                padding: 0 0;
+                            }
+
+                            .planning li img {
+                                width: 100%
+                            }
+
+                            .planning_text {
+                                margin: 10px 0 0 0;
+                                height: 30px;
+                                line-height: 250%;
+                                font-family: "Nanum Gothic";
+                                font-size: 12px;
+                                color: #555;
+                                border-top: 1px solid #e5e5e5;
+                                border-bottom: 2px solid #e5e5e5;
+                                background-color: #f5f5f5;
+                            }
+
+                            .trend_word {
+                                display: inline-block;
+                                line-height: 100%;
+                                text-align: center;
+                                background-color: #f1f1f1;
+                                padding: 15px 5px;
+                            }
+
+                            .trend_word span {
+                                display: inline-block;
+                                border: 1px solid #ddd;
+                                border-radius: 10px;
+                                border-radius: 30px;
+                                padding: 8px 10px;
+                                margin: 3px -2px;
+                                background-color: #fff;
+                            }
+
+                            .trend_word span a {
+                                color: #777;
+                                font-family: nanumgothic;
+                                letter-spacing: -1px;
+                                font-weight: bold;
+                                font-size: 11px;
+                            }
+
+                            .trend_word h2 {
+                                color: #e882bf;
+                                display: block;
+                                padding-bottom: 13px;
+                                font-size: 14px;
+                                font-family: nanumgothic;
+                                font-weight: 600;
+                            }
+                        </style>
+                        <div class="trend_word">
+                            <h2>#6월 최다 검색</h2>
+                            <span><a href="/m/product_list.html?xcode=027&type=Y&mcode=120&scode=005">다니엘웰링턴</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=019&mcode=014&scode=006">판도라</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=027&mcode=031&scode=002">시티즌</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=017&mcode=008&scode=009">몽블랑</a></span>
+                            <span><a href="/m/product_list.html?xcode=027&type=Y&mcode=122&scode=004">알마니</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=019&mcode=006&scode=005">구찌쥬얼리</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=027&mcode=080&scode=004">태그호이어</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=027&mcode=039&scode=007">티쏘</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=027&mcode=037&scode=001">에테르노</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=027&mcode=001&scode=004">구찌시계</a></span>
+                            <span><a href="/m/product_list.html?xcode=027&type=Y&mcode=030&scode=004">마크제이콥스</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=027&mcode=048&scode=005">세이코</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=019&mcode=004&scode=006">스와로브스키</a></span>
+                            <span><a href="/m/product_list.html?type=N&xcode=027&mcode=124&scode=001">오바쿠</a></span>
+
+
+                            <h2 style="margin-top:10px">#기획전</h2>
+                            <ul class="planning">
+                                <li><a href="/m/page.html?id=7" alt=""><img src="/design/timemecca/m/img/spring2018_planning_180221.jpg" alt="3월기획전 받고쓰고"></a></li>
+                                <li><a href="/m/page.html?id=14" alt=""><img src="http://timemecca.img13.kr/web/new/jun2018/jun2018_planning_180504.jpg" alt="6월기획전 50M"></a></li>
+                                <li><a href="/m/page.html?id=15" alt=""><img src="/design/timemecca/m/img/awards2018_planning_180312.jpg" alt="1위기획전 고객감사대전"></a></li>
+                                <li><a href="/m/product_list.html?xcode=028&type=Y&mcode=007" alt=""><img src="/design/timemecca/m/img/top10_planning_180313.jpg" alt="top10"></a></li>
+                                <li><a href="/m/product_list.html?xcode=028&type=Y&mcode=010" alt=""><img src="/design/timemecca/m/img/onlymecca_planning_180209.jpg" alt="기획특가 기획전"></a></li>
+                                <li><a href="/m/product_list.html?xcode=016&type=Y" alt=""><img src="/design/timemecca/m/img/couple_planning_180117.jpg" alt="커플기획전"></a></li>
+                                <li><a href="/m/page.html?id=9" alt=""><img src="/design/timemecca/m/img/fashion_planning_180105.jpg" alt="잡화점"></a></li>
+                                <li><a href="/m/page.html?id=11" alt=""><img src="/design/timemecca/m/img/gift_planning_171219.jpg" alt="타임세일"></a></li>  
+                                <li><a href="/m/page.html?id=6" alt=""><img src="/design/timemecca/m/img/gift_planning_180402.jpg" alt="리퍼기획전"></a></li>
+                            </ul>
+                        </div>
+                  
+                    </div>
+                <!--/end_form/-->
+            </div>
+        </aside>  
+
+ <div id="container" style="min-height: 812px !important;">
+
+
+
+<header id="header" class="header">
+
+<style>
+/* top banner button */
+.banner-top-wrap { 
+	background-color:#e93b3a;
+	width:100%;
+}
+.banner-top { 
+	width:100%;
+	margin:0px auto;
+	text-align:center;
+	position:relative;
+}
+.banner-top a img {
+    width:100%;
+}
+.close-banner-top {
+	position:absolute;
+	top: 20px;
+	right:0px;
+	padding:3px 5px 5px 5px;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    display:block;
+}
+</style>
+ 
+<div class="banner-top-wrap" id="banner-top-wrap">
+   <div class="banner-top">
+       <a href="/m/product_list.html?xcode=019&mcode=004&scode=006&type=Y">
+           <img src="http://timemecca.img13.kr/design/kr/main/m_main_top.jpg" alt="타임메카 탑 배너" />
+       </a>
+    </div>
+    <a href="javascript:closeWin();" class="close-banner-top" id="close-banner-top">오늘 하루 보지 않기 X</a>
+</div>
+  
+<script type="text/javascript">
+	cookiedata = document.cookie;    
+	if ( cookiedata.indexOf("bannerdiv=done") < 0 ) {      
+		document.all['banner-top-wrap'].style.display = "block";
+	} 
+	else {
+		document.all['banner-top-wrap'].style.display = "none"; 
+	}
+</script>
+
+    <div>
+        <nav id="gnb" class="liType1" data-id="menu" data-fixed-id="fixed">
+            <ul class="mtl0-cols4">
+              <!--/if_login/-->
+					<li class="xans-element- xans-layout xans-layout-statelogon "><a href="<!--/link_logout/-->"><!--Ace--><script type="text/javascript">var m_id='member';</script>로그아웃</a>
+					</li>
+					<li class="xans-element- xans-layout xans-layout-statelogon "><a href="<!--/link_join_modify/-->">정보수정</a>
+					</li>
+				<!--/else/-->
+					<li class="xans-element- xans-layout xans-layout-statelogoff "><a href="<!--/link_login/-->">로그인</a>
+					</li>
+					<li class="xans-element- xans-layout xans-layout-statelogoff "><a href="<!--/link_join/-->">회원가입</a>
+						<div id="effectWave" class="use-msgbox">
+							<div id="msgBox">
+								<i class="fa fa-caret-up"></i>
+								<span class="text">+3,000P</span>
+							</div>
+						</div>
+					</li>
+				<!--/end_if/-->
+                <li><a href="<!--/link_order_list/-->">주문조회</a></li>
+                <li><a href="/m/mypage.html">마이쇼핑</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="lnb">
+        <div>
+            <div id="titArea" data-id="logo" data-fixed-id="fixed">
+                <p class="category">
+                    <a href="#none" class="ani-menuBtn">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</a>
+                </p>
+                <h1 class="xans-element- xans-layout xans-layout-logotop "><a href="/m"><img src="/design/timemecca/m/img/timemecca_logo.jpg" alt=""></a>
+                </h1>
+                <p class="search">
+                    <a href="#none" class="ani-searchBtn">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</a>
+                </p>
+            </div>
+        </div>
+        <style>
+            .categoryMenu {
+                overflow: hidden;
+                background: #fff;
+                padding: 0;
+                margin-bottom: 5px;
+                border-bottom: 1px solid #e3e3e3;
+            }
+
+            .categoryMenu li {
+                display: table;
+                width: 25%;
+                text-align: center;
+                float: left;
+                margin-left: -1px;
+                border-top: 1px solid #e3e3e3 border-bottom:1px solid #e3e3e3;
+                border-left: 1px solid #e3e3e3;
+            }
+
+            .categoryMenu li a {
+                display: block;
+                font: 12px open sans, Nanum Gothic;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #444;
+                line-height: 13px;
+                height: 35px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .categoryMenu li.dot {
+                margin-top: -7px;
+            }
+
+            .dotdot {
+                display: block;
+                position: relative;
+                margin-left: -20px;
+            }
+
+            .dotdot span {
+                margin-right: 5px;
+            }
+        </style>
+        <ul class="categoryMenu" style="border-top:1px solid #e3e3e3;">
+            <li><a href="/m/page.html?id=2">전체브랜드</a></li>
+            <li><a href="/m/page.html?id=29">핫픽</a></li>
+            <li><a href="/m/page.html?id=12">패션굿즈</a></li>
+            <!--li><a href="/m/page.html?id=4">프리미엄브랜드</a></li-->
+            <li><a href="/m/page.html?id=5">기획전</a></li>
+        </ul>
+        <ul class="categoryMenu" style="margin-top:-5px">
+            <li><a href="/shop/shopbrand.html?xcode=009&mcode=006&type=M">통큰<span style="color:red">&nbsp;SALE</span></a></li>
+            <li class="dot"><a href="/m/product_list.html?xcode=028&type=Y&mcode=010"><span style="color:red">
+                        <div class="dotdot">
+                            <span>.</span>
+                            <span>.</span>                            
+                        </div>
+                        단독특가</span></a></li>
+            <li><a href="/m/page.html?id=11">타임세일 <img src="/design/timemecca/m/img/watch_icon.jpg" alt=""></a></li>
+            <li><a href="/m/page.html?id=13">중고장터</a></li>
+            <!--li><a href="/m/page.html?id=6">리퍼상품</a></li-->
+        </ul>
+    </div>
+    <div id="dimmedSlider"></div>
+</header>

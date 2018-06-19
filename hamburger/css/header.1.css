@@ -1975,7 +1975,7 @@ html.gnb-sideLeft #blocked {
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage3::before {
     background:url(../img/icon_mypage3.png) no-repeat;
     background-size: 40px 34px;
-    background-position: -2px 0px;
+    background-position: -2px -2px;
 }
 .gnb-innerWrap .mypage-area .mypage-list li a.mypage4::before {
     background:url(../img/icon_mypage4.png) no-repeat;
