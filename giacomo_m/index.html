@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+	<title>자코모발렌티니 | GIACOMOVALENTINI</title>
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<header id="header">
+			<section id="topArea">
+				<div class="searchWrap">
+					<h1><img src="img/giacomo_logo.png" alt="자코모발렌티니" /></h1>
+					<p class="menu category">
+	                	<a href="#none" class="fold"><i class="material-icons">menu</i></a>
+	                </p>
+					<p class="search"><button type="button"><i class="material-icons">search</i></button></p>
+					<p class="basket">
+						<a href="#" class="btnBasket">
+							<i class="material-icons">shopping_cart</i>
+						</a>
+					</p>
+				</div>
+			</section>
+		</header>
+			<div class="main-visual swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide v01" data-visual="v01">Giacomo Valentini Main Visual 1</div>
+					<div class="swiper-slide v02" data-visual="v02">Giacomo Valentini Main Visual 2</div>
+					<div class="swiper-slide v03" data-visual="v03">Giacomo Valentini Main Visual 3</div>
+					<div class="swiper-slide v04" data-visual="v04">Giacomo Valentini Main Visual 4</div>
+				</div>
+				<div class="giacomo_visual_txt"><img src="img/main_logo.png" alt="GIACOMO VALENTINI" /></div>
+			</div>
+		<div id="contents">
+			<div class="main-contents1">
+				<div class="cont-left">
+					<img src="img/sec1_img1.png" alt="Concept" />
+					<div class="cont-txt">
+						<h3>Concept</h3>
+						<p>Made in Italy의 대사라고도 말할 Giacomo Valentini의 크리에이션은 절대적인 신뢰를 줄 수 있는 숙련된 장인들과의 인연에서 비롯됩니다.</p>
+					</div>
+				</div>
+				<div class="cont-right">
+					<img src="img/sec1_img2.png" alt="Production" />
+					<div class="cont-txt">
+						<h3>Production</h3>
+						<p>GV 컬렉션의 성격과 이미지는 전통과 기술이 교차하고 있습니다. 역사 기술과 고품질 소재의 조합이야말로 절묘한 콤비네이션을 매료시켜주는 것입니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="main-contents-product">
+				<div class="product-title">
+					<strong>GIACOMO VALENTINI</strong>
+					<strong>Products</strong>
+				</div>
+				<div class="main-product-list">
+					<ul>
+						<li>
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-sns">
+				<h3>Instagram</h3>
+				<div class="sns-wrap">
+					<div class="sns-api">
+						<img src="img/instagram_thumb.jpg" alt="자코모발렌티니 인스타그램" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footer-customer">
+				<h4>CUSTOMER CENTER</h4>
+				<p class="font-noto-sm">1599-3735 (일반상담문의)</p>
+				<address class="font-noto-sm">(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</address>
+			</div>
+			<div class="footer-company">
+				<h4>COMPANY INFORMATION</h4>
+				<div><strong class="font-noto-sm">(주)트랜드메카</strong><strong class="font-noto-sm">고객센터 : 1599-3735</strong></div>
+				<div><strong class="font-noto-sm">대표 : 서대규</strong><strong class="font-noto-sm">개인정보관리자 : 서대규</strong></div>
+				<div><strong class="font-noto-sm">주소 : 06107 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</strong></div>
+				<div><strong class="font-noto-sm">사업자등록번호 : 113-86-48435</strong><strong class="font-noto-sm">통신판매신고 : 2016-서울강남-02846호</strong></div>
+			</div>
+			<div class="footer-menu">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이용안내</a></li>
+				</ul>
+			</div>
+			<p class="footer-copyright">COPYRIGHTⓒ 2018 TRENDMECCA All Rights Reserved.</p>
+		</footer>
+	</div>
+	<script>
+	/* Slick Slide */
+    $(function() {
+	    var swiper = new Swiper('.main-visual.swiper-container', {
+	        loop: true,
+	        paginationClickable: true,
+	        centeredSlides: true,
+	        effect: 'fade',
+	        pagination: {
+	            el: '.swiper-pagination',
+	            clickable: true,
+	        },
+	        navigation: {
+	            nextEl: '.swiper-button-next',
+	            prevEl: '.swiper-button-prev',
+	        },
+	        autoplay: {
+	            delay: 2500,
+	        },
+	        autoplayDisableOnInteraction: false
+	    });
+	});
+	</script>
+</body>
+</html>
