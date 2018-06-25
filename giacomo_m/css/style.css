@@ -11,7 +11,7 @@ html, body {
     position: fixed;
     width: 100%;
     text-align: center;
-    z-index: 5;
+    z-index: 2000;
 }
 #header h1 {
     text-align: center;
@@ -100,18 +100,20 @@ html, body {
 	justify-content: center;
 	align-items:center;
 	color:#fff;
-	margin: 45px 20px 0px;
+	margin: 50px 20px 10px;
 }
 .main-contents1 img {
 	width:100%;
 }
 .main-contents1 .cont-left {
 	flex:1;
+	min-width:150px;
 	text-align:center;
 	padding:10px;
 }
 .main-contents1 .cont-right {
 	flex:1;
+	min-width:150px;
 	text-align:center;
 	padding:10px;
 }
@@ -123,7 +125,6 @@ html, body {
 	left: 0px;
 }
 .main-contents1 .cont-txt p {
-	min-height:100px;
 	font-family:'Noto Sans KR',sans-serif;
 	font-size: 12px;
 	line-height: 150%;
@@ -131,7 +132,7 @@ html, body {
 .main-contents1 h3 {
 	display:inline-block;
 	font-family:'Playfair Display',sans-serif;
-	font-size:26px;
+	font-size:1.3rem;
 	line-height: 150%;
 }
 .giacomo_visual_txt {
@@ -152,8 +153,59 @@ html, body {
 	margin: 0px auto;
 }
 .main-contents-product {
-	background:#fff;
-	min-height:200px;
+	background:url('../img/sec2_bg.jpg') no-repeat;
+	background-size:cover;
+	background-position:center center;
+	min-height:250px;
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	position:relative;
+	z-index:100;
+}
+.main-contents-product::after {
+	content:'';
+	width:100%;
+	height:100%;
+	background:#000;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity:0.5;
+	z-index:90;
+}
+.main-contents-product .product-title {
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	position:relative;
+	z-index:100;
+}
+.main-contents-product .product-title::after {
+	content:url('../img/h_line.png');
+	display:block;
+	text-align:center;
+	margin-top:15px;
+}
+.main-contents-product .product-title strong.title1 {
+	color:#fff;
+	font-family:'Playfair Display',sans-serif;
+	font-size:1.3rem;
+	line-height:150%;
+	letter-spacing:0.15em;
+	display:block;
+	text-align:center;
+}
+.main-contents-product .product-title strong.title2 {
+	color:#fff;
+	font-family:'Playfair Display',sans-serif;
+	font-size:3.3rem;
+	line-height:130%;
+	letter-spacing:0.02em;
+	display:block;
+	text-align:center;
 }
 .main-sns {
 	margin:60px 20px;
@@ -162,7 +214,9 @@ html, body {
 	color:#fff;
 	text-align:center;
 	font-family:'Playfair Display',sans-serif;
-	font-size:26px;
+	font-size:2rem;
+	letter-spacing:0.03em;
+	line-height:100%;
 }
 .main-sns h3::before {
     content: '';
@@ -186,11 +240,25 @@ html, body {
 	color:#fff;
 	text-align:center;
 }
+#footer .footer-customer p,
+#footer .footer-customer address {
+	line-height:180%;
+	font-size:12px;
+}
+#footer .footer-company {
+	margin:60px 0;
+}
+#footer .footer-company strong {
+	margin:0 10px;
+	display:inline-block;
+	line-height:180%;
+	font-size:12px;
+}
 #footer h4 {
 	font-family:'Playfair Display',sans-serif;
 	font-size:22px;
 	letter-spacing:0.04em;
-	padding:20px 0;
+	padding:0 0 20px 0;
 }
 #footer > .footer-menu > ul {
 	display:flex;
@@ -228,7 +296,13 @@ html, body {
 	font-weight:400;
 	line-height:150%;
 }
-
+@media all and (orientation:landscape) {
+	.giacomo_visual_txt img {
+		display:block;
+		width:50%;
+		margin: 0px auto;
+	}
+}
 
 
 
