@@ -296,6 +296,231 @@ html, body {
 	font-weight:400;
 	line-height:150%;
 }
+
+#production_wrap {
+	width:100%;
+	height:100%;
+}
+.main_visual {
+	position:relative;
+}
+.main_visual .txt_box {
+	position: absolute;
+    bottom: 20%;
+    color: #fff;
+    left: 5%;	
+}
+.main_visual .img_box img {
+    width: 100%;
+}
+.main_visual .txt_box h1 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display',serif,'Lato','Nanum Gothic',맑은 고딕,Segoe UI,sans-serif;
+}
+.main_visual .txt_box p {
+    font-size: 11px;
+    margin-top: 25px;
+    line-height: 150%;
+    font-family: 'Malgun Gothic',sans-serif;	
+}
+.sec_sub .sec_subConcept {
+	position:relative;
+	z-index:99;
+}
+.sec_sub.concept1 .sec_subConcept::after {
+	content:'';
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+    background-image: url(http://www.giacomovalentini.co.kr/web/giacomo/concept/sec1_bg_01.png),url(http://www.giacomovalentini.co.kr/web/giacomo/concept/sec1_bg_02.png);
+    background-repeat: no-repeat,repeat;
+    background-position: left top,left top;
+    background-size: 30% auto,auto auto;
+}
+.sec_sub .subConcept_head {
+	text-align:center;
+	padding-bottom:20px;
+	position:relative;
+	z-index:99;
+}
+.sec_sub .subConcept_head .head_top {
+	padding:60px 30px 0;	
+}
+.sec_sub .subConcept_head .head_top > img {
+	width:40%;
+}
+.sec_sub .subConcept_head .head_top h3 {
+	font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Playfair Display',serif,'Lato','Nanum Gothic',맑은 고딕,Segoe UI,sans-serif;
+    margin-top:20px;
+}
+.sec_sub .subConcept_head .head_top p {
+	font-family:'Noto Sans KR',sans-serif;
+	font-size:14px;
+	font-weight:600;
+	line-height:150%;
+	margin-top:20px;
+}
+.sec_sub .subConcept_head .head_top::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    border-top: 1px solid #000;
+    margin-top: 30px;
+}
+.sec_sub .subConcept_head .head_bottom {
+	padding:10px;
+}
+.sec_sub .subConcept_head .head_bottom p {
+	font-family:'Noto Sans KR',sans-serif;
+	font-size:14px;
+	line-height:160%;
+	padding:10px 20px 0;
+}
+.sec_sub.concept1 .subConcept_cont {
+	padding:20px 20px;
+	position:relative;
+	z-index:99;
+}
+.sec_sub.concept1 .subConcept_cont ul {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.sec_sub.concept1 .subConcept_cont ul li {
+	background: #fff;
+    flex-grow:1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 12px;
+    padding:15px;
+    min-height:367px;
+}
+.sec_sub.concept1 .subConcept_cont dl dt img {
+    width: 100%;
+}
+.sec_sub.concept1 .subConcept_cont dl dd h4 {
+    font-family: 'Playfair Display',serif,'Lato','Nanum Gothic',맑은 고딕,Segoe UI,sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1;
+    margin:15px 0;
+}
+.sec_sub.concept1 .subConcept_cont dl dd p {
+    line-height: 150%;
+    font-family:'Noto Sans KR',sans-serif;
+    font-weight:400;
+    font-size:14px;
+}
+.sec_sub.concept2 .subConcept_head::after {
+	content:'';
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99;
+	background: #000 url(http://www.giacomovalentini.co.kr/web/giacomo/concept/sec2_bg.png) no-repeat center;
+	background-size:cover;
+	opacity:0.5;
+}
+.sec_sub.concept2 .subConcept_head .head_top {
+	position:relative;
+	z-index:100;
+	color:#fff;
+}
+.sec_sub.concept2 .subConcept_head .head_bottom {
+	position:relative;
+	z-index:100;
+	color:#fff;
+}
+.sec_sub.concept2 .subConcept_head .head_top::after {
+    border-top: 1px solid #fff;
+}
+.sec_sub.concept3 {
+    position: relative;
+    background:#fff;
+}
+.sec_sub.concept3::after {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	background-image: url(http://www.giacomovalentini.co.kr/web/giacomo/concept/sec3_bg.png),url(http://www.giacomovalentini.co.kr/web/giacomo/concept/sec1_bg_02.png);
+    background-repeat: no-repeat,repeat;
+    background-position: 150% 5%;
+    background-size: 70% auto,auto auto;
+    padding-bottom: 120px;
+    opacity:0.5;	
+}
+.sec_sub.concept3 .subConcept_cont {
+	padding:20px 20px;
+	position:relative;
+	z-index:99;
+}
+.sec_sub.concept3 .subConcept_cont ul li {
+    background: #fff;
+    width: 100%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.sec_sub.concept3 .subConcept_cont dl {
+	display:table;
+	table-layout:fixed;
+	width:100%;
+}
+.sec_sub.concept3 .subConcept_cont dl dt {
+    display: table-cell;
+    width: 35%;
+}
+.sec_sub.concept3 .subConcept_cont dl dt img {
+	width:80%;
+}
+.sec_sub.concept3 .subConcept_cont dl dd {
+	display:table-cell;
+	vertical-align:top;
+}
+.sec_sub.concept3 .subConcept_cont dl dd h4 {
+    font-family: 'Playfair Display',serif,'Lato','Nanum Gothic',맑은 고딕,Segoe UI,sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.sec_sub.concept3 .subConcept_cont dl dd p {
+	font-family:'Noto Sans KR',sans-serif;
+	font-size:14px;
+	font-weight:400;
+    line-height: 150%;
+    margin-bottom:10px;
+}
+@media all and (max-width:420px) {
+	.sec_sub.concept1 .subConcept_cont ul {
+		display:inherit;
+	}	
+	.sec_sub.concept1 .subConcept_cont ul li {
+	    width:100%;
+	    margin:0px;
+	    margin-bottom:20px;
+	}	
+}
 @media all and (orientation:landscape) {
 	.giacomo_visual_txt img {
 		display:block;
