@@ -1,0 +1,8 @@
+﻿var notice_count = $('.cs-faq-list > ul > li.faq-title');
+
+for(i=1;i<=notice_count.length;i++) {
+    $('.cs-faq-counter').append('<span class="faq-count">' + i + '</span>');
+    if(i == notice_count.length ) {
+        break;
+    }
+}

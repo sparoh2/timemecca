@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<title>Fullpage Scroll</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.3/jquery.mousewheel.min.js"></script>
+	<script src="http://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js?1.4.11"></script>
+</head>
+<body>
+	<div class="wrap">
+
+        <section class="main-contents act1 current">
+            <div class="first-scroll">
+                <div id="banner_half_wrap">
+                    <div class="banner_half_box blue">
+                        <div class="txt leather">
+                            <p class="ti">LOOKS LIKE TOY? ACTS LIKE A WATCH!</p>
+                            <p>마칼루 레더컬렉션은 장난스러운 피젯스피너를 레더밴드와 함께 디자인하여<br>
+                            감성을 더한 유니크한 시계로 완성시켰습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="banner_half_video">
+                        <video class="makalu_video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" style="100%">
+                        	<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-contents act2">
+            <div class="secon-scroll" >
+                <div class="product_wrap">
+                    <ul class="prd_list clearfix">
+                        <li>
+                            <div class="prd_img_box"><a href=""><img src="img/MAKALU_BKL.jpg" alt="MAKALU_BKL"></a></div>
+                            <div class="prd_txt_box">
+                                <h2 class="prd_name">MAKALU_BKL</h2>
+                                 <!--span class="prd_consumer_price"></span>
+                                 <span class="prd_price"></span-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="prd_img_box"><a href=""><img src="img/MAKALU_BKSL.jpg" alt="MAKALU_BKSL"></a></div>
+                            <div class="prd_txt_box">
+                                <h2 class="prd_name">MAKALU_BKSL</h2>
+                                 <!--span class="prd_consumer_price"></span>
+                                 <span class="prd_price"></span-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="prd_img_box"><a href=""><img src="img/MAKALU_BRL.jpg" alt="MAKALU_BRL"></a></div>
+                            <div class="prd_txt_box">
+                                <h2 class="prd_name">MAKALU_BRL</h2>
+                                 <!--span class="prd_consumer_price"></span>
+                                 <span class="prd_price"></span-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="prd_img_box"><a href=""><img src="img/MAKALU_BUL.jpg" alt="MAKALU_BUL"></a></div>
+                            <div class="prd_txt_box">
+                                <h2 class="prd_name">MAKALU_BUL</h2>
+                                 <!--span class="prd_consumer_price"></span>
+                                 <span class="prd_price"></span-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="prd_img_box"><a href=""><img src="img/MAKALU_BUSL.jpg" alt="MAKALU_BUSL"></a></div>
+                            <div class="prd_txt_box">
+                                <h2 class="prd_name">MAKALU_BUSL</h2>
+                                 <!--span class="prd_consumer_price"></span>
+                                 <span class="prd_price"></span-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+	</div>
+<script>
+
+var current 
+
+$(function() {          
+    $('body').mousewheel(function(event, delta) {
+        var $current = $('section.current');
+        
+        console.log(delta);
+        console.log($current);
+                
+        if (delta > 0) {
+            $prev = $current.prev();
+            
+            if ($prev.length) {
+                $('body').stop().scrollTo($prev, 500);
+                $current.removeClass('current');
+                $prev.addClass('current');
+            }
+        } else {
+            $next = $current.next();
+            
+            if ($next.length) {
+                $('body').stop().scrollTo($next, 500);
+                $current.removeClass('current');
+                $next.addClass('current');
+            }
+        }
+                                         
+        event.preventDefault();
+    });
+});
+
+</script>
+</body>
+</html>
