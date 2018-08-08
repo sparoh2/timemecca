@@ -88,9 +88,8 @@ header > nav > ul > li > a:hover {
 	z-index:100;
 }
 .home_contents .home_contents_inner > div.cont2 {
-	background: url(../img/no1_bg.png) no-repeat;
-	background-size:cover;
-	background-position: -48px -69px;
+	background: url(../img/no1_bg_t2.jpg) no-repeat;
+	background-position: -391px -515px;
 	position:relative;
 	z-index:100;
 }
