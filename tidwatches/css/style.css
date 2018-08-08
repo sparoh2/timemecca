@@ -38,7 +38,7 @@ header > h1 {
 }
 header > nav {
 	position:absolute;
-	top: 32px;
+	top: 18px;
 	right:50px;
 	z-index:10000;
 }
