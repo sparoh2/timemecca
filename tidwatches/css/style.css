@@ -347,15 +347,18 @@ footer .footer-inner {
     position:relative;
     padding:20px;
 }
-footer .footer-inner > ul {
-	display:table-cell;
+footer .footer-inner > .information {
+	float:left;
 	width: 77%;
 	padding-left: 31px;
 }
-footer .footer-inner .information li {
+footer .footer-inner > .information > div {
     display: inline-block;
 }
-footer .footer-inner .information li+li:before {
+footer .footer-inner > .information > div:nth-child(1):before {
+	display:none;
+}
+footer .footer-inner > .information > div:before {
     content: '';
     width: 1px;
     height: 10px;
@@ -365,16 +368,18 @@ footer .footer-inner .information li+li:before {
     top: 1px;
     margin: 0 8px;
 }
-footer .footer-inner .information_w li, .footer-inner .information_w li a {
+footer .footer-inner > .information > div,
+footer .footer-inner > .information_w > div > a {
     color: #222;
     font-size: 0.85rem;
     font-family:'Circular','Noto Sans KR',sans-serif;
     letter-spacing:-0.02em;
 }
-footer .footer-inner > strong {
-	display:table-cell;
-	width: 8%;
+footer .footer-inner > .information_company {
+	float:right;
 	padding-right: 36px;
+}
+footer .footer-inner > .information_company > strong {
 	color:#222;
 	font-size: 0.85rem;
 	font-family:'Circular',sans-serif;
