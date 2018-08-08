@@ -1,4 +1,4 @@
-$(function(){
+(function($) {
 	$(document).HorizontalBlocks({
 		parentBox: "#wrapper",
 		block:"#pages>li",
@@ -8,4 +8,4 @@ $(function(){
 	});
 	SyntaxHighlighter.all();
 	$("body").css({"opacity": 1});
-});
+})(jQuery);
