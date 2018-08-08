@@ -349,7 +349,8 @@ footer .footer-inner {
 }
 footer .footer-inner > ul {
 	display:table-cell;
-	width: 78%;
+	width: 77%;
+	padding-left: 31px;
 }
 footer .footer-inner .information li {
     display: inline-block;
@@ -372,10 +373,10 @@ footer .footer-inner .information_w li, .footer-inner .information_w li a {
 }
 footer .footer-inner > strong {
 	display:table-cell;
-	text-align:right;
-	width:15%;
+	width: 8%;
+	padding-right: 36px;
 	color:#222;
-    font-size: 0.85rem;
-    font-family:'Circular',sans-serif;
-    font-weight:400;
+	font-size: 0.85rem;
+	font-family:'Circular',sans-serif;
+	font-weight:400;
 }
