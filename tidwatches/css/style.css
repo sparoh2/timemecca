@@ -1,0 +1,376 @@
+@import url('http://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+* {
+	margin:0px;
+	padding:0px;
+}
+body {
+	font-family: Verdana,"ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂªÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âª", Meiryo, "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100.01%;
+    background-color: #fcfcfc;
+    position: relative;
+    min-width: 800px;
+}
+a {
+	text-decoration: none;
+	color : #333;
+	outline: none;
+}
+header {
+	position:relative;
+	background:#fff;
+	height: 85px;
+	z-index:200;
+}
+header > h1 {
+	font-size:24px;
+	font-family:'Circular',sans-serif;
+	font-weight:400;
+	position:absolute;
+	top: 12px;
+	left:50px;
+	z-index:10000;
+	color:#222;
+}
+header > nav {
+	position:absolute;
+	top: 32px;
+	right:50px;
+	z-index:10000;
+}
+header > nav > ul {
+
+}
+header > nav > ul > li {
+	display:inline-block;
+	margin:0 14px;
+}
+header > nav > ul > li > a {
+	font-size:18px;
+	font-family:'Circular',sans-serif;
+	font-weight:400;	
+	color:#222;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-ms-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+header > nav > ul > li > a:hover {
+	color:#999;
+}
+
+#wrapper {
+	position:relative;
+}
+.home_contents {
+	position: fixed;
+	width:100%;
+	height: 100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99;
+}
+.home_contents .home_contents_inner {
+	text-align:center;
+	overflow:hidden;
+	height:100%;
+	position: relative;
+	display:flex;
+}
+.home_contents .home_contents_inner > div {
+	width:100%;
+	height:100%;
+}
+.home_contents .home_contents_inner > div.cont1 {
+	background:url(../img/sample1.jpg) center bottom no-repeat;
+	background-size:cover;
+	position:relative;
+	z-index:100;
+}
+.home_contents .home_contents_inner > div.cont2 {
+	background: url(../img/no1_bg.png) no-repeat;
+	background-size:cover;
+	background-position: -48px -69px;
+	position:relative;
+	z-index:100;
+}
+.home_contents .home_contents_inner > div.cont2::after {
+	display:none;
+	content:'';
+	position:absolute;
+	top: 100px;
+	right: -207px;
+	width: 207px;
+	height:100%;
+	background: url(../img/no1_bg.png) no-repeat;
+	background-position: -548px -174px;
+	background-size:cover;
+	z-index:102;
+}
+.home_contents .home_contents_inner > div.cont3 {
+	background:url(../img/sample4.jpg) no-repeat;
+	background-position: 62% -180px;
+}
+.home_contents .home_contents_inner > div.cont4 {
+	background:url(../img/170817-tid-582-a_1730.jpg) center no-repeat;
+	background-size:cover;
+}
+.window {
+	background-color: rgba(255,255,255,.9);
+	width: 100%;
+	height:100%;
+	position:relative;
+	display:table;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-ms-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+.window .cont_txt {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+	padding:40px;
+}
+.window .cont_txt .cont_head {
+	color: #222;
+	font-size:42px;
+	font-weight: 600;
+	font-family:'Circular';
+	letter-spacing: -0.02em;
+	margin-bottom:2px;
+}
+.window .cont_txt .cont_subhead {
+	color: #222;
+	font-size:28px;
+	font-weight: 400;
+	font-family:'Circular';
+	letter-spacing: -0.02em;
+	margin-bottom:6px;	
+}
+.window .cont_txt .cont_desc {
+	font-size:16px;
+	font-family:'Circular',sans-serif;
+	line-height:22px;
+}
+.window .cont_txt .view-detail-btn {
+	display: block;
+	border: 2px solid #222;
+	width: 160px;
+	margin: 30px 0;
+	text-align: center;
+	padding: 8px 0;
+	/* background: rgba(0,0,0,0.4); */
+	color: #222;
+	font-family: "Circular",sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+.menuCurrent .window .cont_txt .view-detail-btn {
+	display: block;
+	border: 2px solid #fff;
+	width: 160px;
+	margin: 30px 0;
+	text-align: center;
+	padding: 8px 0;
+	/* background: rgba(0,0,0,0.4); */
+	color: #fff;
+	font-family: "Circular",sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+.menuCurrent div.window{
+	background-color: rgba(2,2,2,0.3);
+}
+.menuCurrent div.window .cont_txt p {
+	color:#fff;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: normal;
+	margin: 28px 0;
+	font-family: 'Lora', serif;
+	padding-left: .3em;
+	border-left: 1px solid white;
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: normal;
+	margin: 24px 0;
+	font-family: 'Lora', serif;
+	padding: 32px 0 0 1em;
+}
+
+.hp {
+	font-size: 24px;
+	text-align: right;
+	padding-right: 1em;
+}
+
+div.disc {
+	position: absolute;
+	font-size: 18px;
+	left: 50%;
+	top: 50%;
+	margin-left: -260px;
+	margin-top: -120px;
+	width: 520px;
+	text-align: center;
+}
+
+div#download {
+	margin: 40px auto 0 auto;
+	width: 200px;
+	height: 50px;
+	background-color: #A4C520;
+	-webkit-border-radius: 24px;
+	        border-radius: 24px;
+	-webkit-transition: all ease .4s;
+	   -moz-transition: all ease .4s;
+	    -ms-transition: all ease .4s;
+	     -o-transition: all ease .4s;
+	        transition: all ease .4s;
+}
+
+div#download:hover {
+	opacity: .6;
+}
+
+div#download a {
+	color: white;
+	font-size: 32px;
+	font-family: 'Lora', serif;
+	text-align: center;
+	line-height: 50px;
+}
+
+
+a#next, a#prev {
+	position: fixed;
+	bottom: 50px;
+	left: 50%;
+	font-size: 48px;
+	font-weight: bolder;
+	margin-left: -360px;
+	-webkit-transform: rotate(-90deg);
+	   -moz-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	     -o-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+}
+a#next {
+	margin-left: 310px;
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+.head {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.head div {
+	float: left;
+}
+
+.col-1 {
+	width: 33.3%;
+	height: 100%;
+	background-color: #399BCC;
+}
+.col-2 {
+	width: 33.4%;
+	height: 100%;
+	background-color: #A4C520;
+}
+.col-3 {
+	width: 33.3%;
+	height: 100%;
+	background-color: #CF5186;
+}
+
+
+div.xml {
+	width: 700px;
+	margin: 40px auto 0 auto;
+}
+
+div#contactb {
+	margin: 48px auto 0 auto;
+	width: 500px;
+	height: 160px;
+	background-color: #FFF;
+	-webkit-border-radius: 24px;
+	        border-radius: 24px;
+	color: #CF5186;
+}
+
+div#canuse {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: 5%;
+	width: 400px;
+	height: 120px;
+	background-image: url("../img/can-use.png");
+}
+footer {
+	width:100%;
+	height:70px;
+	background:#fff;
+	position: absolute;
+	z-index:3000;
+	bottom:0px;
+    display: table;
+    table-layout:fixed;
+}
+footer .footer-inner {
+    display: table-cell;
+    vertical-align:middle;
+    position:relative;
+    padding:20px;
+}
+footer .footer-inner > ul {
+	
+}
+footer .footer-inner .information li {
+    display: inline-block;
+}
+footer .footer-inner .information li+li:before {
+    content: '';
+    width: 1px;
+    height: 10px;
+    background-color: #999;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin: 0 8px;
+}
+footer .footer-inner .information_w li, .footer-inner .information_w li a {
+    color: #222;
+    font-size: 0.85rem;
+    font-family:'Circular','Noto Sans KR',sans-serif;
+    letter-spacing:-0.02em;
+}
+footer .footer-inner > strong {
+	position:absolute;
+	right:30px;
+	top:30px;
+	color:#222;
+    font-size: 0.85rem;
+    font-family:'Circular',sans-serif;
+    font-weight:400;
+}
