@@ -154,6 +154,7 @@ header > nav > ul > li > a:hover {
 	font-weight: 400;
 	font-family:'Circular';
 	letter-spacing: -0.02em;
+	margin-top:0px;
 	margin-bottom:6px;	
 }
 .window .cont_txt .cont_desc {
