@@ -729,21 +729,25 @@
 				                </p>
 				            </div>
 				        </div>
-<div id="main-nav" class="nav_h_type">
-	<ul>
-        <li class="nav-menu01"><span onclick="location.href='/m/page.html?id=2'">브랜드</span></li>
-        <li class="nav-menu02"><span onclick="location.href='/m/page.html?id=29'">핫픽</span></li>
-        <li class="nav-menu03"><span onclick="location.href='/m/page.html?id=12'">패션굿즈</span></li>
-        <li class="nav-menu04"><span onclick="location.href='/m/product_list.html?xcode=009&mcode=006&type=M'">통큰 SALE</span></li>
-        <li class="nav-menu05"><span onclick="location.href='/m/product_list.html?xcode=028&type=Y&mcode=010'">단독특가</span></li>
-        <li class="nav-menu06"><span onclick="location.href='/m/page.html?id=11'">타임세일</span></li>
-        <li class="nav-menu07"><span onclick="location.href='/m/page.html?id=5'">기획전</span></li>
-        <li class="nav-menu08"><span onclick="location.href='/m/board.html?code=timemecca_image1'">이벤트</span></li>
-        <li class="nav-menu09"><span onclick="location.href='/m/board.html?code=timemecca_image1&page=1&type=v&board_cate=&num1=999976&num2=00000&number=12'">바로 받 퀵</span></li>
-        <li class="nav-menu10"><span onclick="location.href='/m/page.html?id=40'">A/S센터</span></li>
-        <li class="nav-menu11 on"><span onclick="location.href='/m/page.html?id=13'">중고장터</span></li>
-	</ul>
-</div>
+				        <ul class="categoryMenu" style="border-top:1px soddd #e3e3e3;">
+				            <li><a href="/m/page.html?id=2">전체브랜드</a></li>
+				            <li><a href="/m/page.html?id=3">테마브랜드</a></li>
+				            <li><a href="/m/page.html?id=12">패션굿즈</a></li>
+				            <!--li><a href="/m/page.html?id=4">프리미엄브랜드</a></li-->
+				            <li><a href="/m/page.html?id=5">기획전</a></li>
+				        </ul>
+				        <ul class="categoryMenu" style="margin-top:-5px">
+				            <li><a href="/m/product_list.html?xcode=009&amp;mcode=006&amp;type=M">통큰<span style="color:red">&nbsp;SALE</span></a></li>
+				            <li class="dot"><a href="/m/product_list.html?xcode=028&amp;type=Y&amp;mcode=010"><span style="color:red">
+				                        <div class="dotdot">
+				                            <span>.</span>
+				                            <span>.</span>                            
+				                        </div>
+				                        단독특가</span></a></li>
+				            <li><a href="/m/page.html?id=11">타임세일 <img src="/design/timemecca/m/img/watch_icon.jpg" alt=""></a></li>
+				            <li><a href="/m/page.html?id=13">중고장터</a></li>
+				            <!--li><a href="/m/page.html?id=6">리퍼상품</a></li-->
+				        </ul>
 				</div>
 			</header>
 			<div id="contents">
@@ -754,16 +758,12 @@
 	</div>
 </body>
 	<script src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="https://dohoons.com/test/touchFlow/jquery.touchFlow.js"></script>
+	<script src="js/horizon-swiper.js"></script>
+	<script src="js/horizon-main.js"></script>
 	<script type="text/javascript">
         window.jQuery1_12_4 = jQuery.noConflict(true);
         (function($) {
             var jQuery = $;
-
-			$("#main-nav").touchFlow({
-				axis : "x",
-				page : $("#main-nav li.on").index()
-			})
 
             $('#gnb-sideLeft').scroll(function() {
         		console.log( $(this).scrollTop() );	
@@ -899,7 +899,19 @@
 			/* Hamburger Touch Down Drag Action */
 
 
-
+			/* Brand Search Active when Scrolddng
+			$(function() {
+				$('#brand-search-list').on('scroll', function() {
+				    $('.list-menu').each(function() {
+				        if($('#brand-search').scrollTop() >= $(this).offset().top - 120) {
+				            var id = $(this).attr('id');
+		            		$('.horizon-item').removeClass('active');
+		            		$('.horizon-item[data-active = '+ id +']').addClass('active');
+				        }
+				    });
+				});
+			});
+			Brand Search Active when Scrolddng */
 	        }(jQuery1_12_4));	
 		</script>
 </html>
