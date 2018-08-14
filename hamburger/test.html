@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta property="og:author" content="dohoons">
+<meta property="og:title" content="Touch Overflow Scroller">
+<meta property="og:description" content="수평or수직 터치스크롤 내비게이션">
+<meta property="og:image" content="">
+
+<title>Touch Overflow Scroller</title>
+<link rel="stylesheet" href="https://dohoons.com/test/touchFlow/common.css">
+<style>
+@media screen and (min-width:768px){
+	body { width:50%; margin:0 auto; }
+}
+h1 { font-size:16px; font-weight:bold; }
+h2 { margin-top:20px; text-align:center; }
+button { padding:10px; font-size:11px; color:#fff; background:#444; border-radius:4px; } 
+</style>
+<link href="css/test.css" rel="stylesheet" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://dohoons.com/test/touchFlow/jquery.touchFlow.js"></script>
+<script>
+//<![CDATA[
+$(document).ready(function() {
+	
+
+	
+
+	// 2 : axis:x, page:'li.on' index
+	$("#main-nav").touchFlow({
+		axis : "x",
+		page : $("#main-nav li.on").index()
+	});
+	
+
+});
+//]]>
+</script>
+</head>
+
+<body>
+<h1>Touch Overflow Scroller (jQuery.touchFlow, dohoons)</h1>
+<p>수평or수직 터치스크롤 내비게이션. 터치or마우스드래그 지원</p>
+<p><a href="https://github.com/dohoons/jquery.touchFlow" target="_blank">https://github.com/dohoons/jquery.touchFlow</a></p>
+
+
+
+
+<h2>2 : axis:x, page:'li.on' index</h2>
+<div id="main-nav" class="nav_h_type">
+	<ul>
+        <li class="nav-menu01"><span onclick="location.href='/m/page.html?id=2'">브랜드</span></li>
+        <li class="nav-menu02"><span onclick="location.href='/m/page.html?id=29'">핫픽</span></li>
+        <li class="nav-menu03"><span onclick="location.href='/m/page.html?id=12'">패션굿즈</span></li>
+        <li class="nav-menu04"><span onclick="location.href='/m/product_list.html?xcode=009&mcode=006&type=M'">통큰 SALE</span></li>
+        <li class="nav-menu05"><span onclick="location.href='/m/product_list.html?xcode=028&type=Y&mcode=010'">단독특가</span></li>
+        <li class="nav-menu06"><span onclick="location.href='/m/page.html?id=11'">타임세일</span></li>
+        <li class="nav-menu07"><span onclick="location.href='/m/page.html?id=5'">기획전</span></li>
+        <li class="nav-menu08"><span onclick="location.href='/m/board.html?code=timemecca_image1'">이벤트</span></li>
+        <li class="nav-menu09"><span onclick="location.href='/m/board.html?code=timemecca_image1&page=1&type=v&board_cate=&num1=999976&num2=00000&number=12'">바로 받 퀵</span></li>
+        <li class="nav-menu10"><span onclick="location.href='/m/page.html?id=40'">A/S센터</span></li>
+        <li class="nav-menu11 on"><span onclick="location.href='/m/page.html?id=13'">중고장터</span></li>
+	</ul>
+</div>
+
+
+
+</body>
+</html>

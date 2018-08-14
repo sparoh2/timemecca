@@ -1,0 +1,32 @@
+.nav_h_type { 
+	background:#fff;
+	position:relative;
+	overflow:hidden;
+}
+.nav_h_type ul { 
+	float:left; 
+	display:block; 
+	font-size:0; 
+	white-space:nowrap; 
+	position:relative;
+	 }
+.nav_h_type li { 
+	-webkit-box-sizing:border-box; 
+	box-sizing:border-box;
+	display:inline-block;
+	height:50px;
+	line-height:50px;
+	vertical-align:top;
+	text-align:center;
+	font-size:14px;
+	font-family:'Nanum Gothic','나눔고딕',sans-serif;
+	font-weight:600;
+	background:#fff;
+}
+.nav_h_type li span {
+	margin:0 10px;
+}
+.nav_h_type li.on { 
+    border-bottom:3px solid #ff0000;
+    padding-bottom:0px;
+}
