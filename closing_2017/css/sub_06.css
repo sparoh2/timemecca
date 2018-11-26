@@ -1,0 +1,158 @@
+.wrap {
+  background: #ff5757;
+  position: relative;
+}
+
+
+.official-bg {
+  background: url(../img/official_bg.png) no-repeat bottom;
+  background-size: 100%;
+  background-color: #ff5757;
+}
+
+.piki-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%);
+  transition: all .5s ease;
+  transition-delay: .8s;
+}
+
+.piki-title {
+  width: 780px;
+}
+
+.piki-title.on {
+  transform: translate(-50%, -50%);
+}
+
+.piki-title>div>img {
+  width: 100%;
+}
+
+.piki-title .sub-title {
+  width: 600px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+
+.piki-title .sub-title.on {
+  opacity: 1;
+}
+
+.piki-title .title {
+  height: 0;
+  transition: all .8s ease;
+  transition-delay: .8s;
+  white-space: nowrap;
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.piki-title.on .title {
+  height: 76px;
+}
+
+.piki-box {
+  background-color: #464646;
+}
+
+.timemecca>div>div>.title {
+  width: 305px;
+  display: inline-block;
+  text-align: center;
+}
+
+.timemecca>div>div>.title2 {
+  width: 700px;
+  margin-top: 26px;
+}
+
+.timemecca .sub-wrap .design-contents,
+.timemecca .sub-wrap .design-contents2 {
+  position: relative;
+  top: 50%;
+  overflow: hidden;  
+  transition: all .8s ease;
+  transition-delay: .3s;
+}
+
+.timemecca .sub-wrap .design-contents.on,
+.timemecca .sub-wrap .design-contents2.on {
+  transform:translateY(-50%);
+}
+
+.timemecca .sub-wrap .design-contents .contents,
+.timemecca .sub-wrap .design-contents2 .contents{
+    width: 100%;
+  text-align: center;
+  height: 0;
+  transition: all .8s ease;
+  transition-delay: .3s;
+  white-space: nowrap;
+  margin-top:30px;
+  opacity: 0;
+}
+
+.timemecca .sub-wrap .design-contents.on .contents,
+.timemecca .sub-wrap .design-contents2.on .contents{
+   height:562px;
+   opacity: 1;
+}
+ 
+
+.timemecca>div>div>div>img {
+  width: 100%;
+}
+
+
+
+.ending-wrap {
+  position: relative;
+  background: radial-gradient(circle, #0e0e0e 15%, #010101);
+}
+
+.ending-text {
+
+  display: none;
+}
+
+.ending-text-end {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 300px;
+  color: #fff;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  -webkit-background-clip: text;
+  z-index: 10;
+}
+
+.ending-text-end+.ending-text-end {
+  -webkit-text-fill-color: red;
+  z-index: 20;
+  animation: text_effect 3s ease-out infinite alternate;
+}
+
+@keyframes text_effect {
+  from {
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 61% 91%, 94% 47%);
+  }
+  50% {
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 59% 52%, 74% 13%);
+  }
+  to {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 85%, 87% 41%);
+  }
+}
+
+.ending-text-end span {
+  display: block;
+}

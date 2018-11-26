@@ -1,0 +1,59 @@
+@charset "uft-8";
+
+
+.txt_box {
+    width: 600px; 
+    position: absolute; 
+    top: 33%; 
+    left: 100px; 
+    border: 5px solid #ff5757; 
+    padding: 130px 15px;
+}
+.bg_box::after{
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left:0; 
+    background: #000; 
+    width: 100%; 
+    height: 100%; 
+    opacity: .7;
+}
+
+.photo-title {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+    transition-delay: .8s;
+}
+.photo-title {
+    top: 130px;
+}
+
+.photo-title.on {
+    transform: translate(-50%, -50%);
+}
+.photo-title .photo-sub-title {
+    width: 600px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+.photo-title .photo-sub-title.on {
+    opacity: 1;
+}
+.photo-title .title {
+    height: 0;
+    transition: all .8s ease;
+    transition-delay: .8s;
+    white-space: nowrap;
+}
+.photo-title.on .title {
+    height: 90px;
+}
+.margin{margin-top: 15px;}

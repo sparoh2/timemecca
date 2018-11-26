@@ -1,0 +1,146 @@
+.wrap {
+    background: #ff5757;
+    position: relative;
+}
+
+.official-bg {
+    background: url(../img/official_bg.png) no-repeat bottom;
+    background-size: 100%;
+}
+
+.official-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+    transition-delay: .8s;
+}
+
+.official-title {
+    width: 780px;
+}
+
+.official-title.on {
+    transform: translate(-50%, -50%);
+}
+
+.official-title>div>img {
+    width: 100%;
+}
+
+.official-title .sub-title {
+    width: 600px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+
+.official-title .sub-title.on {
+    opacity: 1;
+}
+
+.official-title .title {
+    margin-top: 20px;
+    height: 0;
+    transition: all .8s ease;
+    transition-delay: .8s;
+    white-space: nowrap;
+}
+
+.official-title.on .title {
+    height: 76px;
+}
+
+
+.official-bg2 {
+    background: url(../img/official_bg.png) no-repeat bottom;
+    background-size: 100%;
+    background-color: #ff5757;
+}
+
+
+
+.official-img {
+    width: 500px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.official-img>img {
+    width: 100%;
+}
+
+.official-text {
+    overflow: hidden;
+    /* position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+
+.official-text p {
+    color: #fff;
+    font-size: 17px;
+    line-height:1.2;
+    padding-top: 13px;
+}
+
+.official-text p span {
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+
+.official-text>div {
+    display:inline-block;
+    text-align:center;
+    padding-top: 40px;
+}
+
+.official-text>div>div {
+    width:180px;
+    text-align: center;
+    display: inline-block;
+}
+.official-text>div>div>img {
+    width:100%;
+}
+.popup-box {
+    position: relative;
+    display: none;
+    cursor: pointer;
+    width:100%;
+}
+
+.popup-box>.img-box {
+    width: 550px;
+    display:inline-block;
+    text-align:center;
+}
+
+.popup-box>.img-box.img-box-longer {
+    width: 330px;
+}
+.popup-box>.img-box.img-box-long {
+    width: 455px;
+}
+
+.popup-box>.img-box>img {
+    width: 100%;
+}
+
+.official-contents a {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    z-index: 10;
+    cursor: pointer;
+    right: 120px;
+}

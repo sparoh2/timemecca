@@ -1,0 +1,191 @@
+.wrap {
+    background: #464646;
+    position: relative;
+}
+
+.timemecca-bg {
+    background: url(../img/timemecca_bg.jpg) no-repeat top;
+    background-size: 90%;
+}
+
+.slide-box,
+.timemecca-popup {
+    background: #464646;
+}
+
+.timemecca-title {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+    transition-delay: .8s;
+}
+
+.timemecca-title {
+    width: 780px;
+}
+
+.timemecca-title.on {
+    transform: translate(-50%, -50%);
+}
+
+.timemecca-title>div>img {
+    width: 100%;
+}
+
+.timemecca-title .sub-title {
+    width: 600px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+
+.timemecca-title .sub-title.on {
+    opacity: 1;
+}
+
+.timemecca-title .title {
+    margin-top: 20px;
+    height: 0;
+    transition: all .8s ease;
+    transition-delay: .8s;
+    white-space: nowrap;
+}
+
+.timemecca-title.on .title {
+    height: 76px;
+}
+
+.slide-contents {
+    max-width: 1200px;
+    background-color: #464646;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.tm-contents {
+    margin-top: 20px;
+}
+
+.tm-contents .tm-img>img {
+    width: 100%;
+}
+
+.tm-contents .tm-text {
+    color: #ff5757;
+    margin-top: 30px;
+}
+
+.tm-contents .tm-text span {
+    font-size: 22px;
+}
+
+.tm-contents .tm-text p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.timemecca-popup h3 {
+    text-transform: uppercase;
+    margin: 100px auto 0;
+    color: #ff5757;
+    font-weight: bold;
+    font-size: 110px;
+}
+
+.timemecca-popup .sub-wrap>div {
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.timemecca-popup .sub-wrap>div>img {
+    width: 100%;
+}
+
+.popup-button {
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    transition: all .3s ease;
+}
+
+.popup-button>img {
+    width: 100%;
+}
+
+.popup-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.popup-box {
+    position: relative;
+    display: none;
+    margin-top: 20px;
+}
+
+.popup-box .img_box {
+    width: 80%;
+    display: inline-block;
+}
+
+.popup-box .img_box>img {
+    width: 100%;
+}
+
+.popup-box .close-button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #ff5757;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup-box p {
+    font-size: 20px;
+    color: #ff5757;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+}
+
+.popup-box a {
+    position: absolute;
+    bottom: 0px;
+    right:0;
+}

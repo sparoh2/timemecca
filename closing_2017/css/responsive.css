@@ -1,0 +1,60 @@
+/*main-text*/
+
+@media screen and (min-height:512px) and (max-height:780px) {
+	.intro>div {
+		width: 50%;
+	}
+	.intro.on .intro-text {
+		height: 362px;
+	}
+}
+
+
+/*contents-box*/
+
+@media screen and (min-width:512px) and (max-width:1600px) {
+	.contents-menu-title {
+		width: 400px;
+		margin-top: 40px;
+	}
+
+	.contents-box {
+		width: 80%;
+		overflow: hidden;
+		margin: 30px auto 0;
+	}
+
+	.contents-box>div {
+		float: left;
+		overflow: hidden;
+		width: 33%;
+		height: 230px;
+		background-color: #ddd;
+		margin: 1px;
+		box-sizing: border-box;
+	}
+	.popup-box .img_box {
+		width: 62%;
+	}
+
+	.timemecca-popup .sub-wrap>div {
+		width: 900px;
+		margin: 70px auto 0;
+	}
+
+	.timemecca-popup h3 {
+		font-size: 60px;
+		margin: 60px auto 0;
+	}
+	.popup-box>.img-box {
+		width: 400px;
+	}
+
+	.popup-box>.img-box.img-box-long {
+		width: 360px;
+	}
+	.popup-box>.img-box.img-box-longer {
+		width: 250px;
+	}
+
+}

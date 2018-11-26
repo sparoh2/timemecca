@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2017 디자인팀 결산</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!--main start-->
+        <section class="main-contents">
+            <div class="sub-wrap">
+                <div class="intro">
+                    <div class="intro-logo">
+                        <img src="img/trendmecca_logo_white.png" alt="" />
+                    </div>
+                    <div class="intro-text">
+                        <div>
+                            <img src="img/main_text.png" alt="상상하는게 트랜드다." />
+                        </div>
+                        <div>
+                            <img src="img/main_text_03.png" alt="2017년부터 2018년까지" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--main end-->
+        <!--contents menu start-->
+        <section class="contents-menu">
+            <div class="sub-wrap">
+                <div class="contents-menu-title">
+                    <div>
+                        <img src="img/contents_menu_subtitle.png" alt="design team" />
+                    </div>
+                    <div>
+                        <img src="img/contents_menu_title.png" alt="design team" />
+                    </div>
+                </div>
+                <div class="contents-box">
+                    <div><a href="sub_01.html"></a></div>
+                    <div><a href="sub_02.html"></a></div>
+                    <div><a href="sub_03.html"></a></div>
+                    <div><a href="sub_04.html"></a></div>
+                    <div><a href="sub_05.html"></a></div>
+                    <div><a href="sub_06.html"></a></div>
+                </div>
+            </div>
+        </section>
+        <!--contents menu end-->
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.intro-logo').addClass('on');
+            $('.intro').addClass('on');
+            $(function() {
+                var sec_h = $(window).height();
+
+                $(window).resize(function() {
+                    sec_h = $(window).height();
+                });
+
+                $("section").each(function(e) {
+
+                    $(this).attr("data-st", sec_h * e);
+                });
+
+                $('section').mousewheel(function(e, delta) {
+                    st = parseInt($(this).attr('data-st'))
+                    if (delta > 0) {
+
+                        $('body,html').stop().animate({ scrollTop: st - sec_h }, 800);
+                        return false;
+                    }
+                    if (delta < 0) {
+
+                        $('body,html').stop().animate({ scrollTop: st + sec_h }, 800);
+                        return false
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
